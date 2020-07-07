@@ -1,0 +1,50 @@
+{
+  "global": {
+    "fonts": [
+      "bower_components/mdi/fonts/*",
+      "bower_components/font-awesome/webfonts/*",
+      "bower_components/linearicons/dist/web-font/fonts/*"
+    ],
+    "css": [
+      "bower_components/bootstrap/dist/css/bootstrap.min.css",
+      "bower_components/swiper/package/css/swiper.min.css",
+      "bower_components/mdi/css/materialdesignicons.min.css",
+      "bower_components/font-awesome/css/all.min.css",
+      "bower_components/linearicons/dist/web-font/style.css",
+      "src/assets/fonts/fonts.css"
+    ],
+    "js": [
+      "bower_components/jquery/dist/jquery.min.js",
+      "bower_components/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "bower_components/swiper/package/js/swiper.min.js",
+      "bower_components/vanilla-lazyload/dist/lazyload.min.js"
+    ]
+  },
+  "path": {
+    "dist": "dist",
+    "html": {
+      "src": "src/views/**/*.pug",
+      "allFile": "src/**/*.pug",
+      "dist": "dist"
+    },
+    "css": {
+      "mainFile": "src/components/main.sass",
+      "src": "src/components/**/*.sass",
+      "dist": "dist/css"
+    },
+    "js": {
+      "mainFile": "src/components/main.js",
+      "src": "src/components/**/*.js",
+      "dist": "dist/js"
+    },
+    "image": {
+      "src": "src/assets/images/**/*.{svg,gif,png,jpg,jpeg,webp}",
+      "dist": "dist/img"
+    },
+    "font": {
+      "src": "src/assets/fonts/**/*.{woff2,woff,eot,ttf}",
+      "dist": "dist/fonts"
+    }
+  },
+  "PORT": 8000
+}

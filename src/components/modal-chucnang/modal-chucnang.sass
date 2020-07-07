@@ -1,0 +1,51 @@
+.modal_chucnang
+  &__wrapper
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: linear-gradient(to right top, #97c7e0, #0077b6)
+    z-index: 2000
+    transform: scale(0)
+    transition: transform .5s ease-in-out
+    overflow: auto
+    &::-webkit-scrollbar
+      width: 10px
+    &::-webkit-scrollbar-track
+      background: #E5E5E5
+    &::-webkit-scrollbar-thumb
+      background: rgba(0, 72, 146,.3)
+    &::-webkit-scrollbar-thumb:hover
+      background-image: linear-gradient(to right top, #00a650, #009580, #0080a2, #0066a9, #004892)
+    &.show
+      transform: scale(1)
+  &__close
+    font-size: 32px
+    position: absolute
+    top: 15px
+    left: 15px
+    cursor: pointer
+  &__box
+    box-shadow: 0 0 8px 0 #283790
+  &__table
+    th, td
+      vertical-align: middle !important
+  &__button
+    &__icon
+      width: 48px
+      height: 48px
+    &__plus,
+    &__delete,
+    &__save
+      cursor: pointer
+      transition: all .25s ease-in-out
+    &__plus
+      &:hover
+        color: #28a745
+    &__delete
+      &:hover
+        color: #dc3545
+    &__save
+      &:hover
+        color: #007bff

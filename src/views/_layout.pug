@@ -1,0 +1,72 @@
+block var
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    link(rel='stylesheet' href='./css/global.min.css')
+    link(rel='stylesheet' href='./css/main.min.css')
+    title #{title}
+  body(style='opacity: 0')
+    block header
+      include ../components/header/index.pug
+    main
+      block main
+      section.container-fluid.mt-5
+        article.master_page__wrapper
+          .row
+            .col-sm-6.col-md-4
+              .h5.mb-3.text-center Website Khoa CNTT - Tin mới nhất
+              .shadow.rounded.overflow-hidden
+                .master_page__chucnang__box.px-3.px-md-4
+                  .master_page__chucnang__slider.swiper-container
+                    .swiper-wrapper
+                      .swiper-slide
+                        .master_page__chucnang__khoacntt__item
+                          .master_page__chucnang__khoacntt__image
+                            img(src='https://cntt.caothang.edu.vn/wp-content/uploads/2015/04/1.jpg' alt='image')
+                          .font-weight-bold.mt-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, aliquid.
+                          .small.mt-2
+                            span.mr-3
+                              span.mdi.mdi-pencil.mr-1
+                              strong Trần Quang Khải
+                            span
+                              span.mdi.mdi-clock.mr-1
+                              span 15h15 26/6/2020
+                    .swiper-button-prev
+                    .swiper-button-next
+            .col-sm-6.col-md-4
+              .h5.mb-3.text-center E-learning - Hoạt động mới nhất
+              .shadow.rounded.overflow-hidden
+                .master_page__chucnang__box.px-3.px-md-4
+                  -for(var i = 0; i < 5; i++)
+                    .master_page__chucnang__item.master_page__chucnang__fb__item.py-3
+                      .d-flex
+                        .mdi.mdi-account.mr-1
+                        div
+                          strong lucaotien_cntt
+                          span &nbsp; vừa làm cái gì &nbsp;
+                          strong tại chức năng đó
+                          .small 1 giờ trước
+            .col-sm-6.col-md-4
+              .h5.mb-3.text-center Facebook - Tin mới nhất
+              .shadow.rounded.overflow-hidden
+                .master_page__chucnang__box.px-3.px-md-4
+                  -for(var i = 0; i < 5; i++)
+                    .master_page__chucnang__item.master_page__chucnang__fb__item.py-3
+                      .row.no-gutters.align-items-center
+                        .col-auto
+                          .master_page__chucnang__avatar
+                            img(src='https://cntt.caothang.edu.vn/wp-content/uploads/2015/04/1.jpg' alt='image')
+                        .col.ml-3
+                          a(href='#').text-reset
+                            strong Username
+                            span &nbsp; đã làm cái gì &nbsp;
+                            strong tại comment đó
+                          .small 1 giờ trước
+    block footer
+      include ../components/footer/index.pug
+    script(src='./js/global.min.js')
+    script(src='./js/main.min.js')
+    block script

@@ -1,0 +1,24 @@
+{
+  "name": "theme-builder",
+  "author": "Loc Thanh <locnt19@gmail.com>",
+  "description": "THEME BUILDER (html/css/js) is built with gulp v4 + pug + sass + browser sync",
+  "main": "",
+  "license": "ISC",
+  "homepage": "https://github.com/locnt19/theme-builder",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "latest",
+    "font-awesome": "latest",
+    "mdi": "latest",
+    "linearicons": "latest",
+    "vanilla-lazyload": "^14.0.0",
+    "swiper": "^5.4.5"
+  }
+}

@@ -1,0 +1,83 @@
+.header
+  &_master
+    display: flex
+    justify-content: center
+    z-index: 1080
+  &_logo
+    img
+      width: 52px
+      height: 52px
+  &_dropdown
+    &__toggle
+      color: #fff
+      &::after
+        content: '\F035D'
+        display: inline-block
+        font-family: 'Material Design Icons'
+        font-size: inherit
+        text-rendering: auto
+        line-height: 1
+        -webkit-font-smoothing: antialiased
+        -moz-osx-font-smoothing: grayscale
+        margin-left: 4px
+    &__wrapper
+      position: relative
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      padding: .5rem 1.5rem
+      cursor: pointer
+      &:hover
+        .header_dropdown__menu
+          max-height: 500px
+          transition: max-height .5s ease-in
+    &__menu
+      z-index: 1
+      min-width: 200px
+      white-space: nowrap
+      border-bottom-left-radius: 4px
+      border-bottom-right-radius: 4px
+      overflow: hidden
+      max-height: 0
+      transition: max-height .5s ease-out
+      position: absolute
+      top: 100%
+      left: 0
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, .3)
+      background: rgba(#fff, .8)
+    &__item
+      display: block
+      padding: .5rem 2rem
+      color: inherit
+      transition: all .25s ease-in-out
+      &:hover
+        color: #fff
+        text-decoration: none
+        background: #0077b6
+  &_navbar
+    display: flex
+    align-items: center
+    list-style: none
+    &__item
+      height: 100%
+      cursor: pointer
+      color: #fff !important
+      padding: .5rem 1.5rem
+      text-align: center
+      text-decoration: none !important
+      transition: all .25s ease-in-out
+      &:hover
+        background: #283790
+        .header_navbar__icon
+          transform: translateY(-5px)
+      &.active
+        background: #283790
+    &__icon
+      width: 48px
+      height: 48px
+      transition: all .25s ease-in-out
+    &__divider
+      width: 1px
+      height: 80%
+      background: linear-gradient(rgba(#fff, .3), rgba(#fff, .5), rgba(#fff, .8), rgba(#fff, .5), rgba(#fff, .3))
