@@ -1,5 +1,24 @@
 window.addEventListener('DOMContentLoaded', function () {
   LazyLoadFunction()
+  sliderFunction()
+  changeOpacity()
+  toggleModalChucNangAndSelect2()
+  addRowTable('#them_chitiet_chuongtrinhdaotao')
+  removeRowTable('#them_chitiet_chuongtrinhdaotao') // add event click the first time
+  addRowTable('#them_chitiet_chitieudaotao')
+  removeRowTable('#them_chitiet_chitieudaotao') // add event click the first time
+  removeRowTable('#danhsach_monhoc') // add event click the first time
+})
+
+function LazyLoadFunction() {
+  var lazyLoad = new LazyLoad({
+    elements_selector: '.lazy',
+  })
+  lazyLoad.update()
+}
+
+
+function sliderFunction() {
   new Swiper('.master_page__chucnang__slider', {
     spaceBetween: 30,
     loop: true,
@@ -13,34 +32,6 @@ window.addEventListener('DOMContentLoaded', function () {
       prevEl: '.master_page__chucnang__slider .swiper-button-prev'
     }
   })
-  $('.sidebar_chucnang__item').click(function () {
-    $(`.modal_chucnang__wrapper[data-modal=${this.dataset.modal}]`).addClass('show')
-    $('body').addClass('overflow-hidden')
-  })
-  $('.modal_chucnang__close').click(function () {
-    $(this).parent().removeClass('show')
-    $('body').removeClass('overflow-hidden')
-  })
-
-  const tr = `<tr> ${$('#them_chitiet_ctdaotao tbody tr:first-child').html()}</tr>`
-  $('.modal_chucnang__button__plus').click(function () {
-    $('#them_chitiet_ctdaotao tbody').append(tr)
-    $('.modal_chucnang__button__delete').on('click', function () {
-      $(this).parents('tr').remove()
-    })
-  })
-  $('.modal_chucnang__button__delete').on('click', function () {
-    $(this).parents('tr').remove()
-  })
-
-  changeOpacity()
-})
-
-function LazyLoadFunction() {
-  var lazyLoad = new LazyLoad({
-    elements_selector: '.lazy',
-  })
-  lazyLoad.update()
 }
 
 function changeOpacity() {
@@ -51,3 +42,48 @@ function changeOpacity() {
     setTimeout('changeOpacity()', 10)
   }
 }
+
+
+function toggleModalChucNangAndSelect2() {
+  // open modal
+  $('.sidebar_chucnang__item').click(function () {
+    $('.modal_chucnang__select2').select2({
+      dropdownParent: $(`.modal_chucnang__wrapper[data-modal=${this.dataset.modal}]`)
+    })
+    $(`.modal_chucnang__wrapper[data-modal=${this.dataset.modal}]`).addClass('show')
+    $('body').addClass('overflow-hidden')
+  })
+
+  // close modal with Escape key
+  $(window).on('keyup', function (event) {
+    const keycode = event.which || event.keyCode
+    if (keycode == 27 && $('.modal_chucnang__wrapper').hasClass('show')) {
+      $('.modal_chucnang__wrapper').removeClass('show')
+      $('body').removeClass('overflow-hidden')
+    }
+  })
+
+  // close modal
+  $('.modal_chucnang__close').click(function () {
+    $(this).parent().removeClass('show')
+    $('body').removeClass('overflow-hidden')
+  })
+}
+
+//#region event Row Table into Modal Chuc Nang
+function addRowTable(idSelector) {
+  // console.log(idSelector);
+  const td = $(`${idSelector} tbody tr:first-child`).html()
+  const tr = `<tr>${td} </tr>`
+  $(`${idSelector} .modal_chucnang__button__plus`).click(function () {
+    // console.log(this)
+    $(`${idSelector} tbody`).append(tr)
+    removeRowTable(idSelector)
+  })
+}
+function removeRowTable(idSelector) {
+  $(`${idSelector} .modal_chucnang__button__delete`).click(function () {
+    $(this).parents('tr').remove()
+  })
+}
+//#endregion

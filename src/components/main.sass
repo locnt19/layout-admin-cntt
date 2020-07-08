@@ -15,6 +15,26 @@ body
 main
   padding-bottom: 70px // height của footer
 
+.select2-container
+  border-radius: .25rem
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
+  &--focus
+    color: #495057
+    background-color: #fff
+    border-color: #80bdff
+    outline: 0 !important
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25)
+  .select2-selection--single
+    color: #495057
+    display: flex
+    align-items: center
+    border: 1px solid #ced4da
+    padding: .375rem .75rem
+    height: calc(1.5em + .75rem + 2px)
+    .select2-selection__rendered
+      padding: 0
+    .select2-selection__arrow
+      top: 6px
 
 .bg__caothang
   background: #0077b6

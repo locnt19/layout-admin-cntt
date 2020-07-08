@@ -14,74 +14,58 @@ section.modal_chucnang__wrapper(data-modal='chitieudaotao')
                   option Trung cấp
                   option Cao đẳng
                   option Đại học
-              .form-group
-                label Ngành
-                select.form-control
-                  option Ngành CNTT
-                  option Cơ khí
+              .d-flex
+                .col.p-0.form-group
+                  label Loại hình đào tạo
+                  select.form-control.modal_chucnang__select2
+                    option Chính quy
+                    option Liên thông
+                .ml-2
+                  .form-group
+                    label Khoá
+                    input.form-control(type='number' style='width: 80px' min='15' value='15')
             .col-3
               .form-group
-                label Loại hình đào tạo
-                select.form-control
-                  option Chính quy
-                  option Liên thông
+                label Năm học
+                .d-flex
+                  input.form-control(type='number' min='2016' value='2016')
+                  input.form-control.ml-2(type='number' min='2016' value='2016')
               .form-group
-                label Khoá
-                select.form-control
-                  option 15
-                  option 16
-                  option 17
+                label Học kì
+                .d-flex
+                  .d-flex.align-items-center
+                    label.mb-0.mr-2 Từ
+                    input.form-control(type='number' min='1' value='1')
+                  .ml-2.d-flex.align-items-center
+                    label.mb-0.mr-2 đến
+                    input.form-control(type='number' min='1' value='1')
+            .col-auto
+              .custom-control.custom-checkbox
+                input#customCheck0(type='checkbox').custom-control-input
+                label(for='customCheck0').custom-control-label Chỉ tạo lớp
             .col-auto
               .modal_chucnang__group__button
-                button.modal_chucnang__button.btn.btn-outline-primary.px-4.mx-2
+                button.modal_chucnang__button.btn.btn-outline-primary.px-4
                   img.modal_chucnang__button__icon.mb-2(src='img/icons/books.png' alt='image icon')
-                  div Môn tương đương
-                button.modal_chucnang__button.btn.btn-outline-success.px-4.mx-2
-                  img.modal_chucnang__button__icon.mb-2(src='img/icons/portable-document-format.png' alt='image icon')
-                  div Sao chép
-                button.modal_chucnang__button.btn.btn-outline-secondary.px-4.mx-2
-                  img.modal_chucnang__button__icon.mb-2(src='img/icons/print.png' alt='image icon')
-                  div In
-                button(type='reset').modal_chucnang__button.btn.btn-outline-danger.px-4.mx-2
-                  img.modal_chucnang__button__icon.mb-2(src='img/icons/error.png' alt='image icon')
-                  div Huỷ
+                  div Phát sinh lớp học phần
+                //-   div Huỷ
       .col-12
         .modal_chucnang__box.border.rounded.p-4.mt-5.bg-white
-          .d-flex.align-items-center.mb-3
-            ul.pagination.m-0
-              li.page-item.active.text-white
-                a(href='#').page-link.text-reset Học kì 1
-              li.page-item
-                a(href='#').page-link.text-reset Học kì 2
-              li.page-item
-                a(href='#').page-link.text-reset Học kì 3
-              li.page-item
-                a(href='#').page-link.text-reset Học kì 4
-              li.page-item
-                a(href='#').page-link.text-reset Học kì 5
-              li.page-item
-                a(href='#').page-link.text-reset Học kì 6
-              li.page-item
-                a(href='#').page-link.text-reset Tốt nghiệp
-              li.page-item
-                a(href='#').page-link.text-reset Các chứng chỉ
-              li.page-item
-                a(href='#').page-link.text-reset HP tiếng anh
-            .ml-auto
-              .form-inline
-                label.mr-2 Chuyên ngành:
-                select.form-control
-                  option Tất cả chuyên ngành
-                  option CN Mạng máy tính
-                  option CN Công nghệ phần mềm
-          table#them_chitiet_ctdaotao.modal_chucnang__table.table
+          ul.pagination.mb-3
+            li.page-item.active.text-white
+              a(href='#').page-link.text-reset Chỉ tiêu
+            li.page-item
+              a(href='#').page-link.text-reset Lớp học phần
+            li.page-item
+              a(href='#').page-link.text-reset Sinh viên
+          table#them_chitiet_chitieudaotao.modal_chucnang__table.table
             thead.bg__caothang.text-white
               th(scope='col' style='max-width: 80px') STT
-              th(scope='col') Môn học
-              th(scope='col') Bộ môn
-              th(scope='col') Loại tiền thu
-              th(scope='col' style='max-width: 100px') ĐVHT
-              th(scope='col' style='max-width: 100px') Số tiết học
+              th(scope='col') Tên ngành
+              th(scope='col') Số lượng
+              th(scope='col') Ngành
+              th(scope='col' style='max-width: 100px') Lớp
+              th(scope='col' style='max-width: 100px') Chính quy
               th(scope='col' style='max-width: 100px') Số tuần
               th(scope='col') Loại môn
               th(scope='col') Tính

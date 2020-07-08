@@ -19,6 +19,7 @@
     "mdi": "latest",
     "linearicons": "latest",
     "vanilla-lazyload": "^14.0.0",
-    "swiper": "^5.4.5"
+    "swiper": "^5.4.5",
+    "select2": "^4.0.13"
   }
 }
