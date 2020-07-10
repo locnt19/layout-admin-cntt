@@ -250,7 +250,7 @@ main {
   width: 48px;
   height: 48px; }
 
-.modal_chucnang__button__plus, .modal_chucnang__button__delete, .modal_chucnang__button__save {
+.modal_chucnang__button__plus, .modal_chucnang__button__delete, .modal_chucnang__button__save, .modal_chucnang__button__edit {
   cursor: pointer;
   transition: all .25s ease-in-out; }
 
@@ -261,6 +261,9 @@ main {
   color: #dc3545; }
 
 .modal_chucnang__button__save:hover {
-  color: #007bff; }
+  color: #ffc107; }
+
+.modal_chucnang__button__edit:hover {
+  color: #283790; }
 
 /*# sourceMappingURL=main.min.css.map */

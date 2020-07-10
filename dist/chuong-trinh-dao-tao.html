@@ -210,14 +210,14 @@
 											</td>
 											<td>
 												<div class="custom-control custom-checkbox">
-													<input class="custom-control-input" id="customCheck1" type="checkbox">
-													<label class="custom-control-label" for="customCheck1"></label>
+													<input class="custom-control-input" id="kehoachdaotaocheckbox1" type="checkbox">
+													<label class="custom-control-label" for="kehoachdaotaocheckbox1"></label>
 												</div>
 											</td>
 											<td>
 												<div class="custom-control custom-checkbox">
-													<input class="custom-control-input" id="customCheck2" type="checkbox">
-													<label class="custom-control-label" for="customCheck2"></label>
+													<input class="custom-control-input" id="kehoachdaotaocheckbox2" type="checkbox">
+													<label class="custom-control-label" for="kehoachdaotaocheckbox2"></label>
 												</div>
 											</td>
 											<td class="text-center"><span class="modal_chucnang__button__delete mdi mdi-delete-outline mdi-24px"></span></td>
@@ -288,8 +288,8 @@
 									</div>
 									<div class="col-auto">
 										<div class="custom-control custom-checkbox">
-											<input class="custom-control-input" id="customCheck0" type="checkbox">
-											<label class="custom-control-label" for="customCheck0">Chỉ tạo lớp</label>
+											<input class="custom-control-input" id="chitieudaotaocheckbox0" type="checkbox">
+											<label class="custom-control-label" for="chitieudaotaocheckbox0">Chỉ tạo lớp</label>
 										</div>
 									</div>
 									<div class="col-auto">
@@ -368,14 +368,14 @@
 											</td>
 											<td>
 												<div class="custom-control custom-checkbox">
-													<input class="custom-control-input" id="customCheck1" type="checkbox">
-													<label class="custom-control-label" for="customCheck1"></label>
+													<input class="custom-control-input" id="chitieudaotaocheckbox1" type="checkbox">
+													<label class="custom-control-label" for="chitieudaotaocheckbox1"></label>
 												</div>
 											</td>
 											<td>
 												<div class="custom-control custom-checkbox">
-													<input class="custom-control-input" id="customCheck2" type="checkbox">
-													<label class="custom-control-label" for="customCheck2"></label>
+													<input class="custom-control-input" id="chitieudaotaocheckbox2" type="checkbox">
+													<label class="custom-control-label" for="chitieudaotaocheckbox2"></label>
 												</div>
 											</td>
 											<td class="text-center"><span class="modal_chucnang__button__delete mdi mdi-delete-outline mdi-24px"></span></td>
@@ -534,14 +534,14 @@
 											</td>
 											<td>
 												<div class="custom-control custom-checkbox">
-													<input class="custom-control-input" id="customCheck1" type="checkbox">
-													<label class="custom-control-label" for="customCheck1"></label>
+													<input class="custom-control-input" id="giaoviencheckbox1" type="checkbox">
+													<label class="custom-control-label" for="giaoviencheckbox1"></label>
 												</div>
 											</td>
 											<td>
 												<div class="custom-control custom-checkbox">
-													<input class="custom-control-input" id="customCheck2" type="checkbox">
-													<label class="custom-control-label" for="customCheck2"></label>
+													<input class="custom-control-input" id="giaoviencheckbox2" type="checkbox">
+													<label class="custom-control-label" for="giaoviencheckbox2"></label>
 												</div>
 											</td>
 											<td class="text-center"><span class="modal_chucnang__button__delete mdi mdi-delete-outline mdi-24px"></span></td>
@@ -565,48 +565,44 @@
 								<div class="row justify-content-center align-items-center">
 									<div class="col-3">
 										<div class="form-group">
-											<label>Bậc</label>
-											<select class="form-control">
-												<option>Trung cấp</option>
-												<option>Cao đẳng</option>
-												<option>Đại học</option>
-											</select>
+											<label>Tên ngành nghề</label>
+											<input class="form-control">
 										</div>
 										<div class="form-group">
-											<label>Ngành</label>
-											<select class="form-control">
-												<option>Ngành CNTT</option>
-												<option>Cơ khí</option>
-											</select>
+											<label>Tên viết tắt</label>
+											<input class="form-control">
 										</div>
 									</div>
 									<div class="col-3">
-										<div class="form-group">
-											<label>Loại hình đào tạo</label>
-											<select class="form-control">
-												<option>Chính quy</option>
-												<option>Liên thông</option>
-											</select>
+										<div class="row no-gutters">
+											<div class="form-group col-5">
+												<label>Mã ngành nghề</label>
+												<input class="form-control">
+											</div>
+											<div class="form-group col ml-2">
+												<label>Bậc</label>
+												<select class="form-control">
+													<option>Cao đẳng</option>
+													<option>Cao đẳng nghề</option>
+													<option>Đại học</option>
+												</select>
+											</div>
 										</div>
 										<div class="form-group">
-											<label>Khoá</label>
-											<select class="form-control">
-												<option>15</option>
-												<option>16</option>
-												<option>17</option>
+											<label>Ngành cha</label>
+											<select class="form-control modal_chucnang__select2">
+												<option>Ngành cha 1</option>
+												<option>Ngành cha 2</option>
 											</select>
 										</div>
 									</div>
 									<div class="col-auto">
 										<div class="modal_chucnang__group__button">
-											<button class="modal_chucnang__button btn btn-outline-primary px-4 mx-2"><img class="modal_chucnang__button__icon mb-2" src="img/icons/books.png" alt="image icon">
-												<div>Môn tương đương</div>
+											<button class="modal_chucnang__button btn btn-outline-primary px-4 mx-2"><img class="modal_chucnang__button__icon mb-2" src="img/icons/add.png" alt="image icon">
+												<div>Thêm mới</div>
 											</button>
-											<button class="modal_chucnang__button btn btn-outline-success px-4 mx-2"><img class="modal_chucnang__button__icon mb-2" src="img/icons/portable-document-format.png" alt="image icon">
-												<div>Sao chép</div>
-											</button>
-											<button class="modal_chucnang__button btn btn-outline-secondary px-4 mx-2"><img class="modal_chucnang__button__icon mb-2" src="img/icons/print.png" alt="image icon">
-												<div>In</div>
+											<button class="modal_chucnang__button btn btn-outline-success px-4 mx-2"><img class="modal_chucnang__button__icon mb-2" src="img/icons/upgrade.png" alt="image icon">
+												<div>Cập nhật</div>
 											</button>
 											<button class="modal_chucnang__button btn btn-outline-danger px-4 mx-2" type="reset"><img class="modal_chucnang__button__icon mb-2" src="img/icons/error.png" alt="image icon">
 												<div>Huỷ</div>
@@ -618,97 +614,45 @@
 						</div>
 						<div class="col-12">
 							<div class="modal_chucnang__box border rounded p-4 mt-5 bg-white">
-								<div class="d-flex align-items-center mb-3">
-									<ul class="pagination m-0">
-										<li class="page-item active text-white"><a class="page-link text-reset" href="#">Học kì 1</a></li>
-										<li class="page-item"><a class="page-link text-reset" href="#">Học kì 2</a></li>
-										<li class="page-item"><a class="page-link text-reset" href="#">Học kì 3</a></li>
-										<li class="page-item"><a class="page-link text-reset" href="#">Học kì 4</a></li>
-										<li class="page-item"><a class="page-link text-reset" href="#">Học kì 5</a></li>
-										<li class="page-item"><a class="page-link text-reset" href="#">Học kì 6</a></li>
-										<li class="page-item"><a class="page-link text-reset" href="#">Tốt nghiệp</a></li>
-										<li class="page-item"><a class="page-link text-reset" href="#">Các chứng chỉ</a></li>
-										<li class="page-item"><a class="page-link text-reset" href="#">HP tiếng anh</a></li>
-									</ul>
-									<div class="ml-auto">
-										<div class="form-inline">
-											<label class="mr-2">Chuyên ngành:</label>
-											<select class="form-control">
-												<option>Tất cả chuyên ngành</option>
-												<option>CN Mạng máy tính</option>
-												<option>CN Công nghệ phần mềm</option>
-											</select>
-										</div>
-									</div>
+								<div class="d-flex align-items-center mb-2">
+									<label class="mb-0 d-flex align-items-center"><span class="text-nowrap">Hiển thị &nbsp;</span>
+										<select class="custom-select custom-select-sm form-control form-control-sm">
+											<option>10</option>
+											<option>25</option>
+											<option>50</option>
+										</select><span class="text-nowrap">&nbsp; hàng</span>
+									</label>
+									<label class="ml-auto mb-0 d-flex align-items-center"><span class="text-nowrap">Tìm kiếm: &nbsp;</span>
+										<input class="form-control form-control-sm" placeholder="Tìm kiếm">
+									</label>
 								</div>
-								<table class="modal_chucnang__table table" id="them_chitiet_ctdaotao">
+								<table class="modal_chucnang__table table" id="danhsach_nganhnghe">
 									<thead class="bg__caothang text-white">
-										<th scope="col" style="max-width: 80px">STT</th>
-										<th scope="col">Môn học</th>
-										<th scope="col">Bộ môn</th>
-										<th scope="col">Loại tiền thu</th>
-										<th scope="col" style="max-width: 100px">ĐVHT</th>
-										<th scope="col" style="max-width: 100px">Số tiết học</th>
-										<th scope="col" style="max-width: 100px">Số tuần</th>
-										<th scope="col">Loại môn</th>
-										<th scope="col">Tính</th>
-										<th scope="col">Xét</th>
-										<th class="text-center" scope="col"><span class="modal_chucnang__button__plus mdi mdi-plus mdi-24px"></span><span class="ml-2 modal_chucnang__button__save mdi mdi-content-save-outline mdi-24px"></span></th>
+										<th>#</th>
+										<th class="text-center" scope="col" style="max-width: 100px">Mã NN</th>
+										<th scope="col">Tên ngành nghề</th>
+										<th scope="col">Tên viết tắt</th>
+										<th scope="col">Bậc</th>
+										<th scope="col">Ngành cha</th>
+										<th class="text-center" scope="col"><span class="modal_chucnang__button__save mdi mdi-content-save-outline mdi-24px"></span></th>
 									</thead>
 									<tbody>
 										<tr>
-											<td style="max-width: 80px">
-												<input class="form-control" placeholder="STT">
-											</td>
-											<td>
-												<select class="form-control">
-													<option>Mạng máy tính</option>
-													<option>Lập trình hướng đối tượng</option>
-													<option>Cơ sở dữ liệu</option>
-												</select>
-											</td>
-											<td>
-												<select class="form-control">
-													<option>Tin học</option>
-													<option>Cơ khí</option>
-													<option>Ô tô</option>
-												</select>
-											</td>
-											<td>
-												<select class="form-control">
-													<option>Lý thuyết</option>
-													<option>Thực hành</option>
-													<option>Tốt nghiệp</option>
-													<option>Module</option>
-												</select>
-											</td>
+											<td style="max-width: 50px">1</td>
 											<td style="max-width: 100px">
-												<input class="form-control" placeholder="ĐVHT">
-											</td>
-											<td style="max-width: 100px">
-												<input class="form-control" placeholder="Số tiết học">
-											</td>
-											<td style="max-width: 100px">
-												<input class="form-control" placeholder="Số tuần">
+												<input class="form-control form-control-sm" value="PM">
 											</td>
 											<td>
-												<select class="form-control">
-													<option>Thực hành</option>
-													<option>Lý thuyết</option>
-													<option>Module</option>
-												</select>
+												<input class="form-control form-control-sm" value="Công nghệ phần mềm">
 											</td>
 											<td>
-												<div class="custom-control custom-checkbox">
-													<input class="custom-control-input" id="customCheck1" type="checkbox">
-													<label class="custom-control-label" for="customCheck1"></label>
-												</div>
+												<input class="form-control form-control-sm" value="PM">
 											</td>
 											<td>
-												<div class="custom-control custom-checkbox">
-													<input class="custom-control-input" id="customCheck2" type="checkbox">
-													<label class="custom-control-label" for="customCheck2"></label>
-												</div>
+												<input class="form-control form-control-sm" value="Cao đẳng">
+											</td>
+											<td>
+												<input class="form-control form-control-sm" value="CNTT">
 											</td>
 											<td class="text-center"><span class="modal_chucnang__button__delete mdi mdi-delete-outline mdi-24px"></span></td>
 										</tr>
@@ -724,55 +668,42 @@
 				<div class="container-fluid mt-3">
 					<div class="row">
 						<div class="col-12">
-							<h1 class="text-center text-white">Quản lý khoa bộ môn</h1>
+							<h1 class="text-center text-white">Quản lý Khoa - Bộ môn</h1>
 						</div>
 						<div class="col-12">
 							<div class="modal_chucnang__box border rounded p-4 mt-5 bg-white">
+								<h5 class="text-center">Quản lý khoa</h5>
 								<div class="row justify-content-center align-items-center">
 									<div class="col-3">
 										<div class="form-group">
-											<label>Bậc</label>
-											<select class="form-control">
-												<option>Trung cấp</option>
-												<option>Cao đẳng</option>
-												<option>Đại học</option>
-											</select>
+											<label>Mã khoa</label>
+											<input class="form-control">
 										</div>
 										<div class="form-group">
-											<label>Ngành</label>
-											<select class="form-control">
-												<option>Ngành CNTT</option>
-												<option>Cơ khí</option>
-											</select>
+											<label>Tên khoa</label>
+											<input class="form-control">
 										</div>
 									</div>
 									<div class="col-3">
 										<div class="form-group">
-											<label>Loại hình đào tạo</label>
-											<select class="form-control">
-												<option>Chính quy</option>
-												<option>Liên thông</option>
-											</select>
+											<label>Tên viết tắt</label>
+											<input class="form-control">
 										</div>
 										<div class="form-group">
-											<label>Khoá</label>
+											<label>Đơn vị</label>
 											<select class="form-control">
-												<option>15</option>
-												<option>16</option>
-												<option>17</option>
+												<option>Khoa</option>
+												<option>Phòng</option>
 											</select>
 										</div>
 									</div>
 									<div class="col-auto">
 										<div class="modal_chucnang__group__button">
-											<button class="modal_chucnang__button btn btn-outline-primary px-4 mx-2"><img class="modal_chucnang__button__icon mb-2" src="img/icons/books.png" alt="image icon">
-												<div>Môn tương đương</div>
+											<button class="modal_chucnang__button btn btn-outline-primary px-4 mx-2"><img class="modal_chucnang__button__icon mb-2" src="img/icons/add.png" alt="image icon">
+												<div>Thêm mới</div>
 											</button>
-											<button class="modal_chucnang__button btn btn-outline-success px-4 mx-2"><img class="modal_chucnang__button__icon mb-2" src="img/icons/portable-document-format.png" alt="image icon">
-												<div>Sao chép</div>
-											</button>
-											<button class="modal_chucnang__button btn btn-outline-secondary px-4 mx-2"><img class="modal_chucnang__button__icon mb-2" src="img/icons/print.png" alt="image icon">
-												<div>In</div>
+											<button class="modal_chucnang__button btn btn-outline-success px-4 mx-2"><img class="modal_chucnang__button__icon mb-2" src="img/icons/upgrade.png" alt="image icon">
+												<div>Cập nhật</div>
 											</button>
 											<button class="modal_chucnang__button btn btn-outline-danger px-4 mx-2" type="reset"><img class="modal_chucnang__button__icon mb-2" src="img/icons/error.png" alt="image icon">
 												<div>Huỷ</div>
@@ -784,99 +715,65 @@
 						</div>
 						<div class="col-12">
 							<div class="modal_chucnang__box border rounded p-4 mt-5 bg-white">
-								<div class="d-flex align-items-center mb-3">
-									<ul class="pagination m-0">
-										<li class="page-item active text-white"><a class="page-link text-reset" href="#">Học kì 1</a></li>
-										<li class="page-item"><a class="page-link text-reset" href="#">Học kì 2</a></li>
-										<li class="page-item"><a class="page-link text-reset" href="#">Học kì 3</a></li>
-										<li class="page-item"><a class="page-link text-reset" href="#">Học kì 4</a></li>
-										<li class="page-item"><a class="page-link text-reset" href="#">Học kì 5</a></li>
-										<li class="page-item"><a class="page-link text-reset" href="#">Học kì 6</a></li>
-										<li class="page-item"><a class="page-link text-reset" href="#">Tốt nghiệp</a></li>
-										<li class="page-item"><a class="page-link text-reset" href="#">Các chứng chỉ</a></li>
-										<li class="page-item"><a class="page-link text-reset" href="#">HP tiếng anh</a></li>
-									</ul>
-									<div class="ml-auto">
-										<div class="form-inline">
-											<label class="mr-2">Chuyên ngành:</label>
-											<select class="form-control">
-												<option>Tất cả chuyên ngành</option>
-												<option>CN Mạng máy tính</option>
-												<option>CN Công nghệ phần mềm</option>
-											</select>
-										</div>
-									</div>
+								<h5 class="text-center">Quản lý Bộ môn</h5>
+								<div class="d-flex align-items-center mb-2">
+									<label class="mb-0 d-flex align-items-center"><span class="text-nowrap">Hiển thị &nbsp;</span>
+										<select class="custom-select custom-select-sm form-control form-control-sm">
+											<option>10</option>
+											<option>25</option>
+											<option>50</option>
+										</select><span class="text-nowrap">&nbsp; hàng</span>
+									</label>
+									<label class="ml-auto mb-0 d-flex align-items-center"><span class="text-nowrap">Tìm kiếm: &nbsp;</span>
+										<input class="form-control form-control-sm" placeholder="Tìm kiếm">
+									</label>
 								</div>
-								<table class="modal_chucnang__table table" id="them_chitiet_ctdaotao">
+								<table class="modal_chucnang__table table" id="danhsach_khoabomon">
 									<thead class="bg__caothang text-white">
-										<th scope="col" style="max-width: 80px">STT</th>
-										<th scope="col">Môn học</th>
-										<th scope="col">Bộ môn</th>
-										<th scope="col">Loại tiền thu</th>
-										<th scope="col" style="max-width: 100px">ĐVHT</th>
-										<th scope="col" style="max-width: 100px">Số tiết học</th>
-										<th scope="col" style="max-width: 100px">Số tuần</th>
-										<th scope="col">Loại môn</th>
-										<th scope="col">Tính</th>
-										<th scope="col">Xét</th>
-										<th class="text-center" scope="col"><span class="modal_chucnang__button__plus mdi mdi-plus mdi-24px"></span><span class="ml-2 modal_chucnang__button__save mdi mdi-content-save-outline mdi-24px"></span></th>
+										<th>#</th>
+										<th class="text-center" scope="col" style="max-width: 100px">Mã BM</th>
+										<th scope="col">Tên bộ môn</th>
+										<th scope="col">Tên viết tắt</th>
+										<th scope="col">Loại đơn vị</th>
+										<th class="text-center" scope="col"><span class="modal_chucnang__button__plus mdi mdi-plus mdi-24px"></span><span class="modal_chucnang__button__save ml-2 mdi mdi-content-save-outline mdi-24px"></span></th>
 									</thead>
+									<tfoot class="d-none">
+										<tr>
+											<td style="max-width: 50px"></td>
+											<td style="max-width: 100px">
+												<input class="form-control form-control-sm">
+											</td>
+											<td>
+												<input class="form-control form-control-sm">
+											</td>
+											<td>
+												<input class="form-control form-control-sm">
+											</td>
+											<td>
+												<input class="form-control form-control-sm">
+											</td>
+											<td class="text-center"><span class="modal_chucnang__button__edit mdi mdi-file-document-edit-outline mdi-24px"></span><span class="modal_chucnang__button__delete ml-2 mdi mdi-delete-outline mdi-24px"></span></td>
+										</tr>
+									</tfoot>
 									<tbody>
 										<tr>
-											<td style="max-width: 80px">
-												<input class="form-control" placeholder="STT">
-											</td>
-											<td>
-												<select class="form-control">
-													<option>Mạng máy tính</option>
-													<option>Lập trình hướng đối tượng</option>
-													<option>Cơ sở dữ liệu</option>
-												</select>
-											</td>
-											<td>
-												<select class="form-control">
-													<option>Tin học</option>
-													<option>Cơ khí</option>
-													<option>Ô tô</option>
-												</select>
-											</td>
-											<td>
-												<select class="form-control">
-													<option>Lý thuyết</option>
-													<option>Thực hành</option>
-													<option>Tốt nghiệp</option>
-													<option>Module</option>
-												</select>
-											</td>
+											<td style="max-width: 50px">1</td>
 											<td style="max-width: 100px">
-												<input class="form-control" placeholder="ĐVHT">
-											</td>
-											<td style="max-width: 100px">
-												<input class="form-control" placeholder="Số tiết học">
-											</td>
-											<td style="max-width: 100px">
-												<input class="form-control" placeholder="Số tuần">
+												<input class="form-control form-control-sm" disabled value="TH">
 											</td>
 											<td>
-												<select class="form-control">
-													<option>Thực hành</option>
-													<option>Lý thuyết</option>
-													<option>Module</option>
+												<input class="form-control form-control-sm" disabled value="Bộ môn tin học">
+											</td>
+											<td>
+												<input class="form-control form-control-sm" disabled value="TH">
+											</td>
+											<td>
+												<select class="form-control form-control-sm" disabled>
+													<option>Khoa</option>
+													<option>Phòng</option>
 												</select>
 											</td>
-											<td>
-												<div class="custom-control custom-checkbox">
-													<input class="custom-control-input" id="customCheck1" type="checkbox">
-													<label class="custom-control-label" for="customCheck1"></label>
-												</div>
-											</td>
-											<td>
-												<div class="custom-control custom-checkbox">
-													<input class="custom-control-input" id="customCheck2" type="checkbox">
-													<label class="custom-control-label" for="customCheck2"></label>
-												</div>
-											</td>
-											<td class="text-center"><span class="modal_chucnang__button__delete mdi mdi-delete-outline mdi-24px"></span></td>
+											<td class="text-center"><span class="modal_chucnang__button__edit mdi mdi-file-document-edit-outline mdi-24px"></span><span class="modal_chucnang__button__delete ml-2 mdi mdi-delete-outline mdi-24px"></span></td>
 										</tr>
 									</tbody>
 								</table>
@@ -885,7 +782,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="modal_chucnang__wrapper show" data-modal="monhoc">
+			<section class="modal_chucnang__wrapper" data-modal="monhoc">
 				<div class="modal_chucnang__close mdi mdi-chevron-left text-white"></div>
 				<div class="container-fluid mt-3">
 					<div class="row">
@@ -935,10 +832,10 @@
 									</div>
 									<div class="col-auto">
 										<div class="modal_chucnang__group__button">
-											<button class="modal_chucnang__button btn btn-outline-primary px-4 mx-2"><img class="modal_chucnang__button__icon mb-2" src="img/icons/books.png" alt="image icon">
+											<button class="modal_chucnang__button btn btn-outline-primary px-4 mx-2"><img class="modal_chucnang__button__icon mb-2" src="img/icons/add.png" alt="image icon">
 												<div>Thêm mới</div>
 											</button>
-											<button class="modal_chucnang__button btn btn-outline-success px-4 mx-2"><img class="modal_chucnang__button__icon mb-2" src="img/icons/portable-document-format.png" alt="image icon">
+											<button class="modal_chucnang__button btn btn-outline-success px-4 mx-2"><img class="modal_chucnang__button__icon mb-2" src="img/icons/upgrade.png" alt="image icon">
 												<div>Cập nhật</div>
 											</button>
 											<button class="modal_chucnang__button btn btn-outline-danger px-4 mx-2" type="reset"><img class="modal_chucnang__button__icon mb-2" src="img/icons/error.png" alt="image icon">
@@ -973,22 +870,22 @@
 										<th scope="col">Loại môn học</th>
 										<th class="text-center" scope="col"><span class="modal_chucnang__button__save mdi mdi-content-save-outline mdi-24px"></span></th>
 									</thead>
-									<tbody>
+									<tfoot class="d-none">
 										<tr>
 											<td style="max-width: 100px">
-												<input class="form-control form-control-sm" value="0001">
+												<input class="form-control form-control-sm">
 											</td>
 											<td>
-												<input class="form-control form-control-sm" value="Công nghệ thông tin">
+												<input class="form-control form-control-sm">
 											</td>
 											<td>
-												<input class="form-control form-control-sm" value="CNTT">
+												<input class="form-control form-control-sm">
 											</td>
 											<td>
-												<input class="form-control form-control-sm" value="Information Technology">
+												<input class="form-control form-control-sm">
 											</td>
 											<td>
-												<input class="form-control form-control-sm" value="IT">
+												<input class="form-control form-control-sm">
 											</td>
 											<td>
 												<select class="form-control form-control-sm">
@@ -997,7 +894,33 @@
 													<option>Module</option>
 												</select>
 											</td>
-											<td class="text-center"><span class="modal_chucnang__button__delete mdi mdi-delete-outline mdi-24px"></span></td>
+										</tr>
+									</tfoot>
+									<tbody>
+										<tr>
+											<td style="max-width: 100px">
+												<input class="form-control form-control-sm" disabled value="0001">
+											</td>
+											<td>
+												<input class="form-control form-control-sm" disabled value="Công nghệ thông tin">
+											</td>
+											<td>
+												<input class="form-control form-control-sm" disabled value="CNTT">
+											</td>
+											<td>
+												<input class="form-control form-control-sm" disabled value="Information Technology">
+											</td>
+											<td>
+												<input class="form-control form-control-sm" disabled value="IT">
+											</td>
+											<td>
+												<select class="form-control form-control-sm" disabled>
+													<option>Thực hành</option>
+													<option>Lý thuyết</option>
+													<option>Module</option>
+												</select>
+											</td>
+											<td class="text-center"><span class="modal_chucnang__button__edit mdi mdi-file-document-edit-outline mdi-24px"></span><span class="modal_chucnang__button__delete mdi mdi-delete-outline mdi-24px"></span></td>
 										</tr>
 									</tbody>
 								</table>

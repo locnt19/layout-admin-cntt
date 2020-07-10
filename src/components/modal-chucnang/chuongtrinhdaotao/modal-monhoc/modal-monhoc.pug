@@ -1,4 +1,4 @@
-section.modal_chucnang__wrapper.show(data-modal='monhoc')
+section.modal_chucnang__wrapper(data-modal='monhoc')
   .modal_chucnang__close.mdi.mdi-chevron-left.text-white
   .container-fluid.mt-3
     .row
@@ -37,10 +37,10 @@ section.modal_chucnang__wrapper.show(data-modal='monhoc')
             .col-auto
               .modal_chucnang__group__button
                 button.modal_chucnang__button.btn.btn-outline-primary.px-4.mx-2
-                  img.modal_chucnang__button__icon.mb-2(src='img/icons/books.png' alt='image icon')
+                  img.modal_chucnang__button__icon.mb-2(src='img/icons/add.png' alt='image icon')
                   div Thêm mới
                 button.modal_chucnang__button.btn.btn-outline-success.px-4.mx-2
-                  img.modal_chucnang__button__icon.mb-2(src='img/icons/portable-document-format.png' alt='image icon')
+                  img.modal_chucnang__button__icon.mb-2(src='img/icons/upgrade.png' alt='image icon')
                   div Cập nhật
                 button(type='reset').modal_chucnang__button.btn.btn-outline-danger.px-4.mx-2
                   img.modal_chucnang__button__icon.mb-2(src='img/icons/error.png' alt='image icon')
@@ -68,22 +68,40 @@ section.modal_chucnang__wrapper.show(data-modal='monhoc')
               th(scope='col') Loại môn học
               th.text-center(scope='col')
                 span.modal_chucnang__button__save.mdi.mdi-content-save-outline.mdi-24px
-            tbody
+            tfoot.d-none
               tr
                 td(style='max-width: 100px')
-                  input(value='0001').form-control.form-control-sm
+                  input.form-control.form-control-sm
                 td
-                  input(value='Công nghệ thông tin').form-control.form-control-sm
+                  input.form-control.form-control-sm
                 td
-                  input(value='CNTT').form-control.form-control-sm
+                  input.form-control.form-control-sm
                 td
-                  input(value='Information Technology').form-control.form-control-sm
+                  input.form-control.form-control-sm
                 td
-                  input(value='IT').form-control.form-control-sm
+                  input.form-control.form-control-sm
                 td
                   select.form-control.form-control-sm
                     option Thực hành
                     option Lý thuyết
                     option Module
+            tbody
+              tr
+                td(style='max-width: 100px')
+                  input(disabled value='0001').form-control.form-control-sm
+                td
+                  input(disabled value='Công nghệ thông tin').form-control.form-control-sm
+                td
+                  input(disabled value='CNTT').form-control.form-control-sm
+                td
+                  input(disabled value='Information Technology').form-control.form-control-sm
+                td
+                  input(disabled value='IT').form-control.form-control-sm
+                td
+                  select(disabled).form-control.form-control-sm
+                    option Thực hành
+                    option Lý thuyết
+                    option Module
                 td.text-center
+                  span.modal_chucnang__button__edit.mdi.mdi-file-document-edit-outline.mdi-24px
                   span.modal_chucnang__button__delete.mdi.mdi-delete-outline.mdi-24px

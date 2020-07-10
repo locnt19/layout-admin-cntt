@@ -3,11 +3,10 @@ window.addEventListener('DOMContentLoaded', function () {
   sliderFunction()
   changeOpacity()
   toggleModalChucNangAndSelect2()
-  addRowTable('#them_chitiet_chuongtrinhdaotao')
-  removeRowTable('#them_chitiet_chuongtrinhdaotao') // add event click the first time
-  addRowTable('#them_chitiet_chitieudaotao')
-  removeRowTable('#them_chitiet_chitieudaotao') // add event click the first time
-  removeRowTable('#danhsach_monhoc') // add event click the first time
+  // eventRowTable('#them_chitiet_chuongtrinhdaotao')
+  // eventRowTable('#them_chitiet_chitieudaotao')
+  eventRowTable('#danhsach_monhoc')
+  eventRowTable('#danhsach_khoabomon')
 })
 
 function LazyLoadFunction() {
@@ -71,19 +70,43 @@ function toggleModalChucNangAndSelect2() {
 }
 
 //#region event Row Table into Modal Chuc Nang
+
+function eventRowTable(idSelector) {
+  addRowTable(idSelector)
+  removeRowTable(idSelector)
+  editRowTable(idSelector)
+  saveRowTable(idSelector)
+}
+
 function addRowTable(idSelector) {
-  // console.log(idSelector);
-  const td = $(`${idSelector} tbody tr:first-child`).html()
+  const td = $(`${idSelector} tfoot tr:first-child`).html()
   const tr = `<tr>${td} </tr>`
   $(`${idSelector} .modal_chucnang__button__plus`).click(function () {
-    // console.log(this)
-    $(`${idSelector} tbody`).append(tr)
+    $(`${idSelector} tbody`).prepend(tr)
+    editRowTable(idSelector)
     removeRowTable(idSelector)
   })
 }
 function removeRowTable(idSelector) {
   $(`${idSelector} .modal_chucnang__button__delete`).click(function () {
     $(this).parents('tr').remove()
+  })
+}
+
+function editRowTable(idSelector) {
+  $(`${idSelector} .modal_chucnang__button__edit`).click(function () {
+    $(this).parents('tr').find('input').removeAttr('disabled')
+    $(this).parents('tr').find('select').removeAttr('disabled')
+    $(this).parents('tr').find('textarea').removeAttr('disabled')
+  })
+}
+
+function saveRowTable(idSelector) {
+  $(`${idSelector} .modal_chucnang__button__save`).click(function () {
+    console.log('click');
+    $(`${idSelector} tbody input`).attr('disabled', true)
+    $(`${idSelector} tbody select`).attr('disabled', true)
+    $(`${idSelector} tbody textarea`).attr('disabled', true)
   })
 }
 //#endregion
