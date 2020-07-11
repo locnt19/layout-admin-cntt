@@ -1,0 +1,83 @@
+section.modal_chucnang__wrapper(data-modal='cotdiemlophocphan')
+  .modal_chucnang__close.mdi.mdi-chevron-left.text-white
+  .container-fluid.mt-3
+    .row
+      .col-12
+        h1.text-center.text-white Cột điểm Lớp học phần
+      .col-12
+        .modal_chucnang__box.border.rounded.p-4.mt-5.bg-white
+          .row.justify-content-center.align-items-center
+            .col-3
+              .form-group
+                label Lớp học phần
+                select.form-control.modal_chucnang__select2
+                  option Mã LHP hoặc Tên LHP
+              .form-group
+                label Giáo viên
+                select.form-control.modal_chucnang__select2
+                  option Lữ Cao Tiến - CNTT
+            .col-3
+              .form-group
+                label Mã cột điểm
+                input.form-control(placeholder='Tăng tự động theo Lớp học phần')
+              .form-group
+                label Tên cột điểm
+                input.form-control
+            .col-3
+              .form-group
+                label Hệ số
+                input.form-control(type='number' min='1' value='1')
+              .form-group
+                label Tính điểm theo
+                .custom-control.custom-radio
+                  input#cotdiemlophocphanradio1(name='cotdiemlophocphan_tinhdiem' type='radio').custom-control-input
+                  label(for='cotdiemlophocphanradio1').custom-control-label Công thức mặc định
+                .custom-control.custom-radio
+                  input#cotdiemlophocphanradio2(name='cotdiemlophocphan_tinhdiem' type='radio').custom-control-input
+                  label(for='cotdiemlophocphanradio2').custom-control-label Công thức riêng
+            .col-auto
+              .modal_chucnang__group__button
+                button.modal_chucnang__button.btn.btn-outline-primary.px-4.mx-2
+                  img.modal_chucnang__button__icon.mb-1(src='img/icons/add.png' alt='image icon')
+                  div Thêm
+      .col-12
+        .modal_chucnang__box.border.rounded.p-4.mt-5.bg-white
+          .d-flex.align-items-center.mb-2
+            label.mb-0.d-flex.align-items-center
+              span.text-nowrap Hiển thị &nbsp;
+              select.custom-select.custom-select-sm.form-control
+                option 10
+                option 25
+                option 50
+              span.text-nowrap &nbsp; hàng
+            label.ml-auto.mb-0.d-flex.align-items-center
+              span.text-nowrap Bộ lọc: &nbsp;
+              input(placeholder='Nhập từ khoá...').form-control.form-control-sm
+          table#danhsach_cotdiemlophocphan.modal_chucnang__table.table.table-hover
+            thead.bg__caothang.text-white
+              th(scope='col') #
+              th(scope='col') Lớp học phần
+              th(scope='col') Mã cột điểm
+              th(scope='col') Tên cột điểm
+              th(scope='col').text-center Hệ số
+              th(scope='col' style='width: 100px') Tính điểm mặc định
+              th.text-center(scope='col')
+                span.modal_chucnang__button__save.mdi.mdi-content-save-outline.mdi-24px
+            tbody
+              tr
+                td 1
+                td
+                  select(disabled).form-control.modal_chucnang__select2
+                    option Toán rời rạc và lý thuyết đồ thị
+                td
+                  input(disabled value='ktm').form-control
+                td
+                  input(disabled value='Kiểm tra miệng').form-control
+                td
+                  input(disabled value='1').form-control
+                td(style='width: 100px')
+                  .custom-control.custom-checkbox
+                    input#cotdiemlophocphancheckbox1(disabled type='checkbox').custom-control-input
+                    label(for='cotdiemlophocphancheckbox1').custom-control-label
+                td.text-center
+                  span.modal_chucnang__button__edit.mdi.mdi-file-document-edit-outline.mdi-24px

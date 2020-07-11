@@ -1,0 +1,70 @@
+section.modal_chucnang__wrapper(data-modal='nopdiem')
+  .modal_chucnang__close.mdi.mdi-chevron-left.text-white
+  .container-fluid.mt-3
+    .row
+      .col-12
+        h1.text-center.text-white Nộp điểm
+      .col-12
+        .modal_chucnang__box.border.rounded.p-4.mt-5.bg-white
+          .row.justify-content-center.align-items-center
+            .col-3
+              .form-group
+                label Bậc
+                select.form-control
+                  option Cao đẳng
+                  option Cao đẳng nghề
+              .form-group
+                label Ngành
+                select.form-control.modal_chucnang__select2
+                  option Công nghệ thông tin
+                  option Cơ khí
+                  option Ô tô
+            .col-3
+              .form-group
+                label Loại hình đào tạo
+                select.form-control
+                  option Chính quy
+                  option Liên thông
+              .d-flex.no-gutters
+                .col
+                  .form-group
+                    label Khoá
+                    input.form-control(type='number' min='15' value='15')
+                .col.ml-2
+                  .form-group
+                    label Học kì
+                    select.form-control
+                      option 1
+                      option 2
+                      option 3
+                      option Tốt nghiệp
+            .col-auto
+              .modal_chucnang__group__button
+                button.modal_chucnang__button.btn.btn-outline-primary.px-4.mx-2
+                  img.modal_chucnang__button__icon.mb-1(src='img/icons/search.png' alt='image icon')
+                  div Tìm kiếm
+      .col-12
+        .modal_chucnang__box.border.rounded.p-4.mt-5.bg-white
+          .d-flex.align-items-center.mb-2
+            label.mb-0.d-flex.align-items-center
+              span.text-nowrap Hiển thị &nbsp;
+              select.custom-select.custom-select-sm.form-control
+                option 10
+                option 25
+                option 50
+              span.text-nowrap &nbsp; hàng
+            label.ml-auto.mb-0.d-flex.align-items-center
+              span.text-nowrap Bộ lọc: &nbsp;
+              input(placeholder='Nhập từ khoá...').form-control.form-control-sm
+          table#danhsach_nopdiem.modal_chucnang__table.table.table-hover
+            thead.bg__caothang.text-white
+              th(scope='col') Tên lớp
+              th(scope='col') Giáo viên
+              th(scope='col') Ngày nộp
+              th(scope='col') Ngày trễ
+            tbody
+              tr
+                td CĐ TH 16C - Thiết Kế Web
+                td Lê Quang Song
+                td 09/07/2020
+                td

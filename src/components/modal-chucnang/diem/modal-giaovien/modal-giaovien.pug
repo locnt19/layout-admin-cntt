@@ -1,0 +1,115 @@
+section.modal_chucnang__wrapper(data-modal='giaovien')
+  .modal_chucnang__close.mdi.mdi-chevron-left.text-white
+  .container-fluid.mt-3
+    .row
+      .col-12
+        h1.text-center.text-white Giáo viên
+      .col-12
+        .modal_chucnang__box.border.rounded.p-4.mt-5.bg-white
+          .row.justify-content-center.align-items-center
+            .col-3
+              .form-group
+                label Họ
+                input.form-control
+              .form-group
+                label Tên
+                input.form-control
+              .form-group
+                label Ngày sinh
+                input.form-control
+            .col-3
+              .form-group
+                label Địa chỉ thường trú
+                input.form-control
+              .form-group
+                label Số điện thoại
+                input.form-control
+              .form-group
+                label Email
+                input.form-control
+            .col-3
+              .form-group
+                label Bộ môn
+                select.form-control.modal_chucnang__select2
+                  option Bộ môn tin học
+              .form-group
+                label Chức vụ
+                select.form-control
+                  option Trưởng Khoa
+              .form-group
+                label Đơn vị
+                select.form-control.modal_chucnang__select2
+                  option Khoa Công nghệ thông tin
+            .col-3
+              .form-group
+                label Mã giáo viên
+                .d-flex.align-items-center
+                  input.form-control(readonly value='0001')
+                  .mdi.mdi-reload.mdi-24px.ml-2
+              .form-group
+                label Mật khẩu ban đầu cho giáo viên mới
+                input.form-control
+              .form-group
+                label Trình độ chuyên môn
+                select.form-control
+                  option Thạc sĩ
+                  option Tiến sĩ
+            .col-auto
+              .modal_chucnang__group__button
+                button.modal_chucnang__button.btn.btn-outline-primary.px-4.mx-2
+                  img.modal_chucnang__button__icon.mb-1(src='img/icons/add.png' alt='image icon')
+                  div Thêm giáo viên
+      .col-12
+        .modal_chucnang__box.border.rounded.p-4.mt-5.bg-white
+          .d-flex.align-items-center.mb-2
+            label.mb-0.d-flex.align-items-center
+              span.text-nowrap Hiển thị &nbsp;
+              select.custom-select.custom-select-sm.form-control
+                option 10
+                option 25
+                option 50
+              span.text-nowrap &nbsp; hàng
+            label.ml-auto.mb-0.d-flex.align-items-center
+              span.text-nowrap Bộ lọc: &nbsp;
+              input(placeholder='Nhập từ khoá...').form-control.form-control-sm
+          .modal_chucnang__table__giaovien.table-responsive
+            table#danhsach_giaovien.modal_chucnang__table.table.table-hover
+              thead.bg__caothang.text-white
+                th.text-center(scope='col')
+                  span.modal_chucnang__button__save.mdi.mdi-content-save-outline.mdi-24px
+                th.text-center(scope='col') Mã GV
+                th(scope='col') Họ và tên
+                th(scope='col') Email
+                th(scope='col') Ngày sinh
+                th(scope='col') Số điện thoại
+                th(scope='col') Bộ môn
+                th(scope='col') Chức vụ
+                th(scope='col') Đơn vị
+                th(scope='col') Trình độ
+                th(scope='col') Địa chỉ 
+              tbody
+                tr
+                  td.text-center
+                    span.modal_chucnang__button__edit.mdi.mdi-file-document-edit-outline.mdi-24px
+                  td(style='min-width: 100px').text-muted.text-center GV0001
+                  td
+                    input(disabled value='Lữ Cao Tiến').form-control
+                  td
+                    input(disabled value='lucaotien@caothang.edu.vn').form-control
+                  td
+                    input(disabled value='19/09/1998').form-control
+                  td
+                    input(disabled value='0123456789').form-control
+                  td
+                    select(disabled).form-control.modal_chucnang__select2
+                      option Bộ môn tin học
+                  td
+                    select(disabled).form-control
+                      option Trưởng Khoa
+                  td
+                    select(disabled).form-control.modal_chucnang__select2
+                      option Khoa Công nghệ thông tin
+                  td(style='min-width: 150px')
+                    input(disabled value='Thạc sĩ').form-control
+                  td
+                    input(disabled value='223 Lê Tấn Bê, Phường An Lạc, Quận Bình Tân').form-control

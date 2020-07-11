@@ -23,10 +23,10 @@ section.modal_chucnang__wrapper(data-modal='monhoc')
                 input.form-control
             .col-3
               .form-group
-                label Mã môn học
+                label Mã giáo viên
                 .d-flex.align-items-center
-                  .mdi.mdi-reload.mdi-24px.mr-2
                   input.form-control(readonly value='0001')
+                  .mdi.mdi-reload.mdi-24px.ml-2
               .form-group
                 label Loại môn học
                 select.form-control
@@ -50,7 +50,7 @@ section.modal_chucnang__wrapper(data-modal='monhoc')
           .d-flex.align-items-center.mb-2
             label.mb-0.d-flex.align-items-center
               span.text-nowrap Hiển thị &nbsp;
-              select.custom-select.custom-select-sm.form-control.form-control-sm
+              select.custom-select.custom-select-sm.form-control
                 option 10
                 option 25
                 option 50
@@ -58,7 +58,7 @@ section.modal_chucnang__wrapper(data-modal='monhoc')
             label.ml-auto.mb-0.d-flex.align-items-center
               span.text-nowrap Tìm kiếm: &nbsp;
               input(placeholder='Tìm kiếm').form-control.form-control-sm
-          table#danhsach_monhoc.modal_chucnang__table.table
+          table#danhsach_monhoc.modal_chucnang__table.table.table-hover
             thead.bg__caothang.text-white
               th(scope='col' style='max-width: 100px').text-center Mã MH
               th(scope='col') Tên môn học
@@ -71,34 +71,34 @@ section.modal_chucnang__wrapper(data-modal='monhoc')
             tfoot.d-none
               tr
                 td(style='max-width: 100px')
-                  input.form-control.form-control-sm
+                  input.form-control
                 td
-                  input.form-control.form-control-sm
+                  input.form-control
                 td
-                  input.form-control.form-control-sm
+                  input.form-control
                 td
-                  input.form-control.form-control-sm
+                  input.form-control
                 td
-                  input.form-control.form-control-sm
+                  input.form-control
                 td
-                  select.form-control.form-control-sm
+                  select.form-control
                     option Thực hành
                     option Lý thuyết
                     option Module
             tbody
               tr
                 td(style='max-width: 100px')
-                  input(disabled value='0001').form-control.form-control-sm
+                  input(disabled value='0001').form-control
                 td
-                  input(disabled value='Công nghệ thông tin').form-control.form-control-sm
+                  input(disabled value='Công nghệ thông tin').form-control
                 td
-                  input(disabled value='CNTT').form-control.form-control-sm
+                  input(disabled value='CNTT').form-control
                 td
-                  input(disabled value='Information Technology').form-control.form-control-sm
+                  input(disabled value='Information Technology').form-control
                 td
-                  input(disabled value='IT').form-control.form-control-sm
+                  input(disabled value='IT').form-control
                 td
-                  select(disabled).form-control.form-control-sm
+                  select(disabled).form-control
                     option Thực hành
                     option Lý thuyết
                     option Module

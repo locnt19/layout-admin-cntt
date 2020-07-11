@@ -1,0 +1,71 @@
+section.modal_chucnang__wrapper(data-modal='giaovienlophocphan')
+  .modal_chucnang__close.mdi.mdi-chevron-left.text-white
+  .container-fluid.mt-3
+    .row
+      .col-12
+        h1.text-center.text-white Giáo viên lớp học phần
+      .col-12
+        .modal_chucnang__box.border.rounded.p-4.mt-5.bg-white
+          .row.justify-content-center.align-items-center
+            .col-3
+              .form-group
+                label Lớp học phần
+                select.form-control.modal_chucnang__select2
+                  option Mã lớp học phần
+              .form-group
+                label Giáo viên
+                select.form-control.modal_chucnang__select2
+                  option Lữ Cao Tiến - CNTT
+            .col-3
+              .form-group
+                label Loại giảng dạy
+                select.form-control
+                  option Trợ giảng
+                  option Giảng dạy
+              .form-group
+                label Ghi chú
+                input.form-control
+            .col-auto
+              .modal_chucnang__group__button
+                button.modal_chucnang__button.btn.btn-outline-primary.px-4.mx-2
+                  img.modal_chucnang__button__icon.mb-1(src='img/icons/add.png' alt='image icon')
+                  div Thêm
+      .col-12
+        .modal_chucnang__box.border.rounded.p-4.mt-5.bg-white
+          .d-flex.align-items-center.mb-2
+            label.mb-0.d-flex.align-items-center
+              span.text-nowrap Hiển thị &nbsp;
+              select.custom-select.custom-select-sm.form-control
+                option 10
+                option 25
+                option 50
+              span.text-nowrap &nbsp; hàng
+            label.ml-auto.mb-0.d-flex.align-items-center
+              span.text-nowrap Bộ lọc: &nbsp;
+              input(placeholder='Nhập từ khoá...').form-control.form-control-sm
+          table#danhsach_giaovienlophocphan.modal_chucnang__table.table.table-hover
+            thead.bg__caothang.text-white
+              th(scope='col').text-center #
+              th(scope='col') Lớp học phần
+              th(scope='col') Giáo viên
+              th(scope='col') Loại giảng dạy
+              th(scope='col') Ghi chú
+              th.text-center(scope='col')
+                span.modal_chucnang__button__save.mdi.mdi-content-save-outline.mdi-24px
+            tbody
+              tr
+                td.text-center 100
+                td
+                  select(disabled).form-control.modal_chucnang__select2
+                    option Lớp học phần
+                td
+                  select(disabled).form-control.modal_chucnang__select2
+                    option Lữ Cao Tiến - CNTT
+                td
+                  select(disabled).form-control
+                    option Giảng dạy
+                td
+                  input(disabled value='Ghi chú abc').form-control
+                td.text-center
+                  span.modal_chucnang__button__edit.mdi.mdi-file-document-edit-outline.mdi-24px
+                  span.modal_chucnang__button__delete.ml-2.mdi.mdi-delete-outline.mdi-24px

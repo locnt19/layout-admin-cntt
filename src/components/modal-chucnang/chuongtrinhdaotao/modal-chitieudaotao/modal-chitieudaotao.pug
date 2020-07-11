@@ -48,7 +48,6 @@ section.modal_chucnang__wrapper(data-modal='chitieudaotao')
                 button.modal_chucnang__button.btn.btn-outline-primary.px-4
                   img.modal_chucnang__button__icon.mb-2(src='img/icons/books.png' alt='image icon')
                   div Phát sinh lớp học phần
-                //-   div Huỷ
       .col-12
         .modal_chucnang__box.border.rounded.p-4.mt-5.bg-white
           ul.pagination.mb-3
@@ -58,15 +57,15 @@ section.modal_chucnang__wrapper(data-modal='chitieudaotao')
               a(href='#').page-link.text-reset Lớp học phần
             li.page-item
               a(href='#').page-link.text-reset Sinh viên
-          table#them_chitiet_chitieudaotao.modal_chucnang__table.table
+          table#them_chitiet_chitieudaotao.modal_chucnang__table.table.table-hover
             thead.bg__caothang.text-white
-              th(scope='col' style='max-width: 80px') STT
+              th(scope='col').text-center #
               th(scope='col') Tên ngành
               th(scope='col') Số lượng
               th(scope='col') Ngành
-              th(scope='col' style='max-width: 100px') Lớp
-              th(scope='col' style='max-width: 100px') Chính quy
-              th(scope='col' style='max-width: 100px') Số tuần
+              th(scope='col') Lớp
+              th(scope='col') Chính quy
+              th(scope='col') Số tuần
               th(scope='col') Loại môn
               th(scope='col') Tính
               th(scope='col') Xét
@@ -75,8 +74,7 @@ section.modal_chucnang__wrapper(data-modal='chitieudaotao')
                 span.ml-2.modal_chucnang__button__save.mdi.mdi-content-save-outline.mdi-24px
             tbody
               tr
-                td(style='max-width: 80px')
-                  input.form-control(placeholder='STT')
+                td.text-center 1000
                 td
                   select.form-control
                     option Mạng máy tính

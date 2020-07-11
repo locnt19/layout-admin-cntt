@@ -31,6 +31,11 @@
   &__table
     th, td
       vertical-align: middle !important
+    input[disabled], select[disabled], textarea[disabled], span.select2-selection[aria-disabled=true]
+      background: none
+      border: none
+      padding-left: 0
+      
   &__button
     &__icon
       width: 48px

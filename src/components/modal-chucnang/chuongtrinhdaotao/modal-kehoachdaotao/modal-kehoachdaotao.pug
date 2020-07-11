@@ -71,15 +71,15 @@ section.modal_chucnang__wrapper(data-modal='kehoachdaotao')
                   option Tất cả chuyên ngành
                   option CN Mạng máy tính
                   option CN Công nghệ phần mềm
-          table#them_chitiet_chuongtrinhdaotao.modal_chucnang__table.table
+          table#them_chitiet_chuongtrinhdaotao.modal_chucnang__table.table.table-hover
             thead.bg__caothang.text-white
-              th(scope='col' style='max-width: 80px') STT
+              th.text-center #
               th(scope='col') Môn học
               th(scope='col') Bộ môn
               th(scope='col') Loại tiền thu
-              th(scope='col' style='max-width: 100px') ĐVHT
-              th(scope='col' style='max-width: 100px') Số tiết học
-              th(scope='col' style='max-width: 100px') Số tuần
+              th(scope='col') ĐVHT
+              th(scope='col') Số tiết học
+              th(scope='col') Số tuần
               th(scope='col') Loại môn
               th(scope='col') Tính
               th(scope='col') Xét
@@ -88,8 +88,7 @@ section.modal_chucnang__wrapper(data-modal='kehoachdaotao')
                 span.ml-2.modal_chucnang__button__save.mdi.mdi-content-save-outline.mdi-24px
             tbody
               tr
-                td(style='max-width: 80px')
-                  input.form-control(placeholder='STT')
+                td.text-center 1000
                 td
                   select.form-control
                     option Mạng máy tính

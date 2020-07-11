@@ -188,7 +188,7 @@ main {
   width: 200px;
   margin: .5rem; }
   .sidebar_chucnang__item:first-of-type .sidebar_chucnang__box {
-    background: #79859d; }
+    background: #353b48; }
   .sidebar_chucnang__item:nth-of-type(2) .sidebar_chucnang__box {
     background: #006865; }
   .sidebar_chucnang__item:nth-of-type(3) .sidebar_chucnang__box {
@@ -200,9 +200,17 @@ main {
   .sidebar_chucnang__item:nth-of-type(6) .sidebar_chucnang__box {
     background: #4722ff; }
   .sidebar_chucnang__item:nth-of-type(7) .sidebar_chucnang__box {
+    background: #eb4d4b; }
+  .sidebar_chucnang__item:nth-of-type(8) .sidebar_chucnang__box {
     background: #0e86ff; }
+  .sidebar_chucnang__item:nth-of-type(9) .sidebar_chucnang__box {
+    background: #7f8fa6; }
+  .sidebar_chucnang__item:nth-of-type(10) .sidebar_chucnang__box {
+    background: #be2edd; }
+  .sidebar_chucnang__item:nth-of-type(11) .sidebar_chucnang__box {
+    background: #f9ca24; }
   .sidebar_chucnang__item:last-of-type .sidebar_chucnang__box {
-    background: #4e5c71; }
+    background: #30336b; }
 
 .sidebar_chucnang__box {
   display: block;
@@ -246,6 +254,11 @@ main {
 .modal_chucnang__table th, .modal_chucnang__table td {
   vertical-align: middle !important; }
 
+.modal_chucnang__table input[disabled], .modal_chucnang__table select[disabled], .modal_chucnang__table textarea[disabled], .modal_chucnang__table span.select2-selection[aria-disabled=true] {
+  padding-left: 0;
+  border: none;
+  background: none; }
+
 .modal_chucnang__button__icon {
   width: 48px;
   height: 48px; }
@@ -265,5 +278,22 @@ main {
 
 .modal_chucnang__button__edit:hover {
   color: #283790; }
+
+.modal_chucnang__table__giaovien {
+  overflow: auto; }
+  .modal_chucnang__table__giaovien::-webkit-scrollbar {
+    width: 6px;
+    height: 6px; }
+  .modal_chucnang__table__giaovien::-webkit-scrollbar-track {
+    background: #E5E5E5; }
+  .modal_chucnang__table__giaovien::-webkit-scrollbar-thumb {
+    border-radius: 99px;
+    background: rgba(0, 72, 146, 0.3); }
+  .modal_chucnang__table__giaovien::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(to right top, #00a650, #009580, #0080a2, #0066a9, #004892); }
+  .modal_chucnang__table__giaovien table td:first-of-type {
+    min-width: 70px; }
+  .modal_chucnang__table__giaovien table td:not(:first-of-type) {
+    min-width: 200px; }
 
 /*# sourceMappingURL=main.min.css.map */

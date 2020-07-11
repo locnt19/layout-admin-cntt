@@ -17,29 +17,18 @@
 				</div>
 			</div>
 			<nav class="header_navbar">
-				<li class="header_navbar__divider"></li>
-				<li class="header_navbar__item"><a class="text-white text-decoration-none" href="chuong-trinh-dao-tao.html"><img class="header_navbar__icon mb-1" src="img/icons/school.png" alt="icon chức năng">
-						<div>Chương trình đào tạo</div></a></li>
-				<li class="header_navbar__divider"></li>
-				<li class="header_navbar__item"><img class="header_navbar__icon mb-1" src="img/icons/test.png" alt="icon chức năng">
-					<div>Điểm</div>
-				</li>
-				<li class="header_navbar__divider"></li>
-				<li class="header_navbar__item"><img class="header_navbar__icon mb-1" src="img/icons/checklist.png" alt="icon chức năng">
-					<div>Báo cáo quyết định</div>
-				</li>
-				<li class="header_navbar__divider"></li>
-				<li class="header_navbar__item"><img class="header_navbar__icon mb-1" src="img/icons/blackboard.png" alt="icon chức năng">
-					<div>E-learning</div>
-				</li>
-				<li class="header_navbar__divider"></li>
-				<li class="header_navbar__item"><img class="header_navbar__icon mb-1" src="img/icons/function.png" alt="icon chức năng">
-					<div>Website CNTT</div>
-				</li>
-				<li class="header_navbar__divider"></li>
-				<li class="header_navbar__item"><img class="header_navbar__icon mb-1" src="img/icons/facebook.png" alt="icon chức năng">
-					<div>Facebook</div>
-				</li>
+				<div class="header_navbar__divider"></div><a class="header_navbar__item text-white text-decoration-none d-block" href="chuong-trinh-dao-tao.html"><img class="header_navbar__icon mb-1" src="img/icons/school.png" alt="icon chức năng">
+					<div>Chương trình đào tạo</div></a>
+				<div class="header_navbar__divider"></div><a class="header_navbar__item text-white text-decoration-none d-block" href="diem.html"><img class="header_navbar__icon mb-1" src="img/icons/test.png" alt="icon chức năng">
+					<div>Điểm</div></a>
+				<div class="header_navbar__divider"></div><a class="header_navbar__item text-white text-decoration-none d-block" href="chuong-trinh-dao-tao.html"><img class="header_navbar__icon mb-1" src="img/icons/checklist.png" alt="icon chức năng">
+					<div>Báo cáo quyết định</div></a>
+				<div class="header_navbar__divider"></div><a class="header_navbar__item text-white text-decoration-none d-block" href="chuong-trinh-dao-tao.html"><img class="header_navbar__icon mb-1" src="img/icons/blackboard.png" alt="icon chức năng">
+					<div>E-learning</div></a>
+				<div class="header_navbar__divider"></div><a class="header_navbar__item text-white text-decoration-none d-block" href="chuong-trinh-dao-tao.html"><img class="header_navbar__icon mb-1" src="img/icons/function.png" alt="icon chức năng">
+					<div>Website CNTT</div></a>
+				<div class="header_navbar__divider"></div><a class="header_navbar__item text-white text-decoration-none d-block" href="chuong-trinh-dao-tao.html"><img class="header_navbar__icon mb-1" src="img/icons/facebook.png" alt="icon chức năng">
+					<div>Facebook</div></a>
 			</nav>
 		</header>
 		<main>
@@ -58,6 +47,9 @@
 						<div class="sidebar_chucnang__item" data-modal="nganhnghe"><a class="sidebar_chucnang__box card border-0 py-3 px-2 px-sm-3 text-center text-decoration-none text-uppercase text-white" href="#">
 								<div class="sidebar_chucnang__icon mdi mdi-near-me mdi-24px"></div>
 								<div class="sidebar_chucnang__text mt-2">Ngành nghề</div></a></div>
+						<div class="sidebar_chucnang__item" data-modal="chucvu"><a class="sidebar_chucnang__box card border-0 py-3 px-2 px-sm-3 text-center text-decoration-none text-uppercase text-white" href="#">
+								<div class="sidebar_chucnang__icon mdi mdi-near-me mdi-24px"></div>
+								<div class="sidebar_chucnang__text mt-2">Chức vụ</div></a></div>
 						<div class="sidebar_chucnang__item" data-modal="khoabomon"><a class="sidebar_chucnang__box card border-0 py-3 px-2 px-sm-3 text-center text-decoration-none text-uppercase text-white" href="#">
 								<div class="sidebar_chucnang__icon mdi mdi-folder-account mdi-24px"></div>
 								<div class="sidebar_chucnang__text mt-2">Khoa - Bộ môn</div></a></div>
@@ -151,15 +143,15 @@
 										</div>
 									</div>
 								</div>
-								<table class="modal_chucnang__table table" id="them_chitiet_chuongtrinhdaotao">
+								<table class="modal_chucnang__table table table-hover" id="them_chitiet_chuongtrinhdaotao">
 									<thead class="bg__caothang text-white">
-										<th scope="col" style="max-width: 80px">STT</th>
+										<th class="text-center">#</th>
 										<th scope="col">Môn học</th>
 										<th scope="col">Bộ môn</th>
 										<th scope="col">Loại tiền thu</th>
-										<th scope="col" style="max-width: 100px">ĐVHT</th>
-										<th scope="col" style="max-width: 100px">Số tiết học</th>
-										<th scope="col" style="max-width: 100px">Số tuần</th>
+										<th scope="col">ĐVHT</th>
+										<th scope="col">Số tiết học</th>
+										<th scope="col">Số tuần</th>
 										<th scope="col">Loại môn</th>
 										<th scope="col">Tính</th>
 										<th scope="col">Xét</th>
@@ -167,9 +159,7 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td style="max-width: 80px">
-												<input class="form-control" placeholder="STT">
-											</td>
+											<td class="text-center">1000</td>
 											<td>
 												<select class="form-control">
 													<option>Mạng máy tính</option>
@@ -309,15 +299,15 @@
 									<li class="page-item"><a class="page-link text-reset" href="#">Lớp học phần</a></li>
 									<li class="page-item"><a class="page-link text-reset" href="#">Sinh viên</a></li>
 								</ul>
-								<table class="modal_chucnang__table table" id="them_chitiet_chitieudaotao">
+								<table class="modal_chucnang__table table table-hover" id="them_chitiet_chitieudaotao">
 									<thead class="bg__caothang text-white">
-										<th scope="col" style="max-width: 80px">STT</th>
+										<th class="text-center" scope="col">#</th>
 										<th scope="col">Tên ngành</th>
 										<th scope="col">Số lượng</th>
 										<th scope="col">Ngành</th>
-										<th scope="col" style="max-width: 100px">Lớp</th>
-										<th scope="col" style="max-width: 100px">Chính quy</th>
-										<th scope="col" style="max-width: 100px">Số tuần</th>
+										<th scope="col">Lớp</th>
+										<th scope="col">Chính quy</th>
+										<th scope="col">Số tuần</th>
 										<th scope="col">Loại môn</th>
 										<th scope="col">Tính</th>
 										<th scope="col">Xét</th>
@@ -325,9 +315,7 @@
 									</thead>
 									<tbody>
 										<tr>
-											<td style="max-width: 80px">
-												<input class="form-control" placeholder="STT">
-											</td>
+											<td class="text-center">1000</td>
 											<td>
 												<select class="form-control">
 													<option>Mạng máy tính</option>
@@ -475,7 +463,7 @@
 										</div>
 									</div>
 								</div>
-								<table class="modal_chucnang__table table" id="them_chitiet_ctdaotao">
+								<table class="modal_chucnang__table table table-hover" id="them_chitiet_ctdaotao">
 									<thead class="bg__caothang text-white">
 										<th scope="col" style="max-width: 80px">STT</th>
 										<th scope="col">Môn học</th>
@@ -616,7 +604,7 @@
 							<div class="modal_chucnang__box border rounded p-4 mt-5 bg-white">
 								<div class="d-flex align-items-center mb-2">
 									<label class="mb-0 d-flex align-items-center"><span class="text-nowrap">Hiển thị &nbsp;</span>
-										<select class="custom-select custom-select-sm form-control form-control-sm">
+										<select class="custom-select custom-select-sm form-control">
 											<option>10</option>
 											<option>25</option>
 											<option>50</option>
@@ -626,7 +614,7 @@
 										<input class="form-control form-control-sm" placeholder="Tìm kiếm">
 									</label>
 								</div>
-								<table class="modal_chucnang__table table" id="danhsach_nganhnghe">
+								<table class="modal_chucnang__table table table-hover" id="danhsach_nganhnghe">
 									<thead class="bg__caothang text-white">
 										<th>#</th>
 										<th class="text-center" scope="col" style="max-width: 100px">Mã NN</th>
@@ -640,19 +628,19 @@
 										<tr>
 											<td style="max-width: 50px">1</td>
 											<td style="max-width: 100px">
-												<input class="form-control form-control-sm" value="PM">
+												<input class="form-control" value="PM">
 											</td>
 											<td>
-												<input class="form-control form-control-sm" value="Công nghệ phần mềm">
+												<input class="form-control" value="Công nghệ phần mềm">
 											</td>
 											<td>
-												<input class="form-control form-control-sm" value="PM">
+												<input class="form-control" value="PM">
 											</td>
 											<td>
-												<input class="form-control form-control-sm" value="Cao đẳng">
+												<input class="form-control" value="Cao đẳng">
 											</td>
 											<td>
-												<input class="form-control form-control-sm" value="CNTT">
+												<input class="form-control" value="CNTT">
 											</td>
 											<td class="text-center"><span class="modal_chucnang__button__delete mdi mdi-delete-outline mdi-24px"></span></td>
 										</tr>
@@ -718,7 +706,7 @@
 								<h5 class="text-center">Quản lý Bộ môn</h5>
 								<div class="d-flex align-items-center mb-2">
 									<label class="mb-0 d-flex align-items-center"><span class="text-nowrap">Hiển thị &nbsp;</span>
-										<select class="custom-select custom-select-sm form-control form-control-sm">
+										<select class="custom-select custom-select-sm form-control">
 											<option>10</option>
 											<option>25</option>
 											<option>50</option>
@@ -728,10 +716,10 @@
 										<input class="form-control form-control-sm" placeholder="Tìm kiếm">
 									</label>
 								</div>
-								<table class="modal_chucnang__table table" id="danhsach_khoabomon">
+								<table class="modal_chucnang__table table table-hover" id="danhsach_khoabomon">
 									<thead class="bg__caothang text-white">
 										<th>#</th>
-										<th class="text-center" scope="col" style="max-width: 100px">Mã BM</th>
+										<th scope="col" style="max-width: 100px">Mã BM</th>
 										<th scope="col">Tên bộ môn</th>
 										<th scope="col">Tên viết tắt</th>
 										<th scope="col">Loại đơn vị</th>
@@ -741,16 +729,16 @@
 										<tr>
 											<td style="max-width: 50px"></td>
 											<td style="max-width: 100px">
-												<input class="form-control form-control-sm">
+												<input class="form-control">
 											</td>
 											<td>
-												<input class="form-control form-control-sm">
+												<input class="form-control">
 											</td>
 											<td>
-												<input class="form-control form-control-sm">
+												<input class="form-control">
 											</td>
 											<td>
-												<input class="form-control form-control-sm">
+												<input class="form-control">
 											</td>
 											<td class="text-center"><span class="modal_chucnang__button__edit mdi mdi-file-document-edit-outline mdi-24px"></span><span class="modal_chucnang__button__delete ml-2 mdi mdi-delete-outline mdi-24px"></span></td>
 										</tr>
@@ -759,16 +747,16 @@
 										<tr>
 											<td style="max-width: 50px">1</td>
 											<td style="max-width: 100px">
-												<input class="form-control form-control-sm" disabled value="TH">
+												<input class="form-control" disabled value="TH">
 											</td>
 											<td>
-												<input class="form-control form-control-sm" disabled value="Bộ môn tin học">
+												<input class="form-control" disabled value="Bộ môn tin học">
 											</td>
 											<td>
-												<input class="form-control form-control-sm" disabled value="TH">
+												<input class="form-control" disabled value="TH">
 											</td>
 											<td>
-												<select class="form-control form-control-sm" disabled>
+												<select class="form-control" disabled>
 													<option>Khoa</option>
 													<option>Phòng</option>
 												</select>
@@ -814,10 +802,10 @@
 									</div>
 									<div class="col-3">
 										<div class="form-group">
-											<label>Mã môn học</label>
+											<label>Mã giáo viên</label>
 											<div class="d-flex align-items-center">
-												<div class="mdi mdi-reload mdi-24px mr-2"></div>
 												<input class="form-control" readonly value="0001">
+												<div class="mdi mdi-reload mdi-24px ml-2"></div>
 											</div>
 										</div>
 										<div class="form-group">
@@ -850,7 +838,7 @@
 							<div class="modal_chucnang__box border rounded p-4 mt-5 bg-white">
 								<div class="d-flex align-items-center mb-2">
 									<label class="mb-0 d-flex align-items-center"><span class="text-nowrap">Hiển thị &nbsp;</span>
-										<select class="custom-select custom-select-sm form-control form-control-sm">
+										<select class="custom-select custom-select-sm form-control">
 											<option>10</option>
 											<option>25</option>
 											<option>50</option>
@@ -860,7 +848,7 @@
 										<input class="form-control form-control-sm" placeholder="Tìm kiếm">
 									</label>
 								</div>
-								<table class="modal_chucnang__table table" id="danhsach_monhoc">
+								<table class="modal_chucnang__table table table-hover" id="danhsach_monhoc">
 									<thead class="bg__caothang text-white">
 										<th class="text-center" scope="col" style="max-width: 100px">Mã MH</th>
 										<th scope="col">Tên môn học</th>
@@ -873,22 +861,22 @@
 									<tfoot class="d-none">
 										<tr>
 											<td style="max-width: 100px">
-												<input class="form-control form-control-sm">
+												<input class="form-control">
 											</td>
 											<td>
-												<input class="form-control form-control-sm">
+												<input class="form-control">
 											</td>
 											<td>
-												<input class="form-control form-control-sm">
+												<input class="form-control">
 											</td>
 											<td>
-												<input class="form-control form-control-sm">
+												<input class="form-control">
 											</td>
 											<td>
-												<input class="form-control form-control-sm">
+												<input class="form-control">
 											</td>
 											<td>
-												<select class="form-control form-control-sm">
+												<select class="form-control">
 													<option>Thực hành</option>
 													<option>Lý thuyết</option>
 													<option>Module</option>
@@ -899,28 +887,117 @@
 									<tbody>
 										<tr>
 											<td style="max-width: 100px">
-												<input class="form-control form-control-sm" disabled value="0001">
+												<input class="form-control" disabled value="0001">
 											</td>
 											<td>
-												<input class="form-control form-control-sm" disabled value="Công nghệ thông tin">
+												<input class="form-control" disabled value="Công nghệ thông tin">
 											</td>
 											<td>
-												<input class="form-control form-control-sm" disabled value="CNTT">
+												<input class="form-control" disabled value="CNTT">
 											</td>
 											<td>
-												<input class="form-control form-control-sm" disabled value="Information Technology">
+												<input class="form-control" disabled value="Information Technology">
 											</td>
 											<td>
-												<input class="form-control form-control-sm" disabled value="IT">
+												<input class="form-control" disabled value="IT">
 											</td>
 											<td>
-												<select class="form-control form-control-sm" disabled>
+												<select class="form-control" disabled>
 													<option>Thực hành</option>
 													<option>Lý thuyết</option>
 													<option>Module</option>
 												</select>
 											</td>
 											<td class="text-center"><span class="modal_chucnang__button__edit mdi mdi-file-document-edit-outline mdi-24px"></span><span class="modal_chucnang__button__delete mdi mdi-delete-outline mdi-24px"></span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="modal_chucnang__wrapper" data-modal="chucvu">
+				<div class="modal_chucnang__close mdi mdi-chevron-left text-white"></div>
+				<div class="container-fluid mt-3">
+					<div class="row">
+						<div class="col-12">
+							<h1 class="text-center text-white">Quản lý Chức vụ</h1>
+						</div>
+						<div class="col-12">
+							<div class="modal_chucnang__box border rounded p-4 mt-5 bg-white">
+								<div class="row justify-content-center align-items-center">
+									<div class="col-3">
+										<div class="form-group">
+											<label>Mã chức vụ</label>
+											<input class="form-control">
+										</div>
+									</div>
+									<div class="col-3">
+										<div class="form-group">
+											<label>Tên chức vụ</label>
+											<input class="form-control">
+										</div>
+									</div>
+									<div class="col-3">
+										<div class="form-group">
+											<label>Đơn vị</label>
+											<select class="form-control">
+												<option>Khoa</option>
+												<option>Phòng</option>
+												<option>Bộ môn</option>
+												<option>Bộ phận</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="modal_chucnang__group__button">
+											<button class="modal_chucnang__button btn btn-outline-primary px-4 mx-2"><img class="modal_chucnang__button__icon mb-2" src="img/icons/add.png" alt="image icon">
+												<div>Thêm mới</div>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="modal_chucnang__box border rounded p-4 mt-5 bg-white">
+								<div class="d-flex align-items-center mb-2">
+									<label class="mb-0 d-flex align-items-center"><span class="text-nowrap">Hiển thị &nbsp;</span>
+										<select class="custom-select custom-select-sm form-control">
+											<option>10</option>
+											<option>25</option>
+											<option>50</option>
+										</select><span class="text-nowrap">&nbsp; hàng</span>
+									</label>
+									<label class="ml-auto mb-0 d-flex align-items-center"><span class="text-nowrap">Tìm kiếm: &nbsp;</span>
+										<input class="form-control form-control-sm" placeholder="Tìm kiếm">
+									</label>
+								</div>
+								<table class="modal_chucnang__table table table-hover" id="danhsach_khoabomon">
+									<thead class="bg__caothang text-white">
+										<th>#</th>
+										<th scope="col">Mã CV</th>
+										<th scope="col">Tên chức vụ</th>
+										<th scope="col">Loại đơn vị</th>
+										<th class="text-center" scope="col"><span class="modal_chucnang__button__save ml-2 mdi mdi-content-save-outline mdi-24px"></span></th>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>01</td>
+											<td>
+												<input class="form-control" disabled value="Trưởng phòng">
+											</td>
+											<td>
+												<select class="form-control" disabled>
+													<option>Khoa</option>
+													<option>Phòng</option>
+													<option>Bộ môn</option>
+													<option>Bộ phận</option>
+												</select>
+											</td>
+											<td class="text-center"><span class="modal_chucnang__button__edit mdi mdi-file-document-edit-outline mdi-24px"></span><span class="modal_chucnang__button__delete ml-2 mdi mdi-delete-outline mdi-24px"></span></td>
 										</tr>
 									</tbody>
 								</table>
