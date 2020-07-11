@@ -1,0 +1,47 @@
+section.modal_chucnang__wrapper(data-modal='quanlybaidang')
+  .modal_chucnang__close.mdi.mdi-chevron-left.text-white
+  .container-fluid.mt-3
+    .row
+      .col-12
+        h1.text-center.text-white Quản lý bài đăng
+      .col-12
+        .modal_chucnang__box.border.rounded.p-4.mt-5.bg-white
+          .row.justify-content-center.align-items-center
+      .col-12
+        .modal_chucnang__box.border.rounded.p-4.mt-5.bg-white
+          .d-flex.align-items-center.mb-2
+            label.mb-0.d-flex.align-items-center
+              span.text-nowrap Hiển thị &nbsp;
+              select.custom-select.custom-select-sm.form-control
+                option 10
+                option 25
+                option 50
+              span.text-nowrap &nbsp; hàng
+            label.ml-auto.mb-0.d-flex.align-items-center
+              span.text-nowrap Tìm kiếm: &nbsp;
+              input(placeholder='Tìm kiếm').form-control.form-control-sm
+          table#danhsach_quanlybaidang.modal_chucnang__table.table.table-hover
+            thead.bg__caothang.text-white
+              th #
+              th(scope='col' style='max-width: 100px') Mã K-BM
+              th(scope='col') Tên Khoa - Bộ môn
+              th(scope='col') Tên viết tắt
+              th(scope='col') Loại đơn vị
+              th.text-center(scope='col')
+                span.modal_chucnang__button__save.ml-2.mdi.mdi-content-save-outline.mdi-24px
+            tbody
+              tr
+                td(style='max-width: 50px') 1
+                td(style='max-width: 100px')
+                  input(disabled value='TH').form-control
+                td
+                  input(disabled value='Bộ môn tin học').form-control
+                td
+                  input(disabled value='TH').form-control
+                td
+                  select(disabled).form-control
+                    option Khoa
+                    option Phòng
+                td.text-center
+                  span.modal_chucnang__button__edit.mdi.mdi-file-document-edit-outline.mdi-24px
+                  span.modal_chucnang__button__delete.ml-2.mdi.mdi-delete-outline.mdi-24px

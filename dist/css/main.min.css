@@ -185,8 +185,9 @@ main {
     background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3)); }
 
 .sidebar_chucnang__item {
-  width: 200px;
-  margin: .5rem; }
+  width: 220px;
+  margin: .5rem;
+  cursor: pointer; }
   .sidebar_chucnang__item:first-of-type .sidebar_chucnang__box {
     background: #353b48; }
   .sidebar_chucnang__item:nth-of-type(2) .sidebar_chucnang__box {

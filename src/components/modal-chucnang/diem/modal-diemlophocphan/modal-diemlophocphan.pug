@@ -1,0 +1,63 @@
+section.modal_chucnang__wrapper(data-modal='diemlophocphan')
+  .modal_chucnang__close.mdi.mdi-chevron-left.text-white
+  .container-fluid.mt-3
+    .row
+      .col-12
+        h1.text-center.text-white Điểm quá trình lớp học phần
+      .col-12
+        .modal_chucnang__box.border.rounded.p-4.mt-5.bg-white
+          .row.justify-content-center.align-items-center
+            .col-3
+              .form-group
+                label Lớp học phần
+                select.form-control.modal_chucnang__select2
+                  option Toán cao cấp
+            .col-3
+              .form-group
+                label Lớp
+                select.form-control.modal_chucnang__select2
+                  option CĐ TH 16 PMC
+            .col-auto
+              .modal_chucnang__group__button
+                button.modal_chucnang__button.btn.btn-outline-primary.px-4.mx-2
+                  img.modal_chucnang__button__icon.mb-1(src='img/icons/search.png' alt='image icon')
+                  div Tìm kiếm
+      .col-12
+        .modal_chucnang__box.border.rounded.p-4.mt-5.bg-white
+          .d-flex.align-items-center.mb-2
+            label.mb-0.d-flex.align-items-center
+              span.text-nowrap Hiển thị &nbsp;
+              select.custom-select.custom-select-sm.form-control
+                option 10
+                option 25
+                option 50
+              span.text-nowrap &nbsp; hàng
+            label.ml-auto.mb-0.d-flex.align-items-center
+              span.text-nowrap Bộ lọc: &nbsp;
+              input(placeholder='Nhập từ khoá...').form-control.form-control-sm
+          table#danhsach_diemlophocphan.modal_chucnang__table.table.table-hover
+            thead.bg__caothang.text-white
+              th(scope='col').text-center #
+              th(scope='col') MSSV
+              th(scope='col') Họ và tên
+              th(scope='col') CC
+              th(scope='col') 15 phút
+              th(scope='col') 60 phút
+              th(scope='col') Ghi chú
+              th.text-center(scope='col')
+                span.modal_chucnang__button__save.mdi.mdi-content-save-outline.mdi-24px
+            tbody
+              tr
+                td.text-center 100
+                td 0306161311
+                td Nguyễn Thành Lộc
+                td(style='width: 80px')
+                  input(disabled value='10').form-control
+                td(style='width: 80px')
+                  input(disabled value='10').form-control
+                td(style='width: 80px')
+                  input(disabled value='10').form-control
+                td
+                  input(disabled value='Lớp trưởng').form-control
+                td.text-center
+                  span.modal_chucnang__button__edit.mdi.mdi-file-document-edit-outline.mdi-24px

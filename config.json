@@ -1,9 +1,7 @@
 {
   "global": {
     "fonts": [
-      "bower_components/mdi/fonts/*",
-      "bower_components/font-awesome/webfonts/*",
-      "bower_components/linearicons/dist/web-font/fonts/*"
+      "bower_components/mdi/fonts/*"
     ],
     "css": [
       "bower_components/bootstrap/dist/css/bootstrap.min.css",
@@ -11,8 +9,7 @@
       "bower_components/select2/dist/css/select2.min.css",
       "bower_components/mdi/css/materialdesignicons.min.css",
       "bower_components/font-awesome/css/all.min.css",
-      "bower_components/linearicons/dist/web-font/style.css",
-      "src/assets/fonts/fonts.css"
+      "src/assets/fonts/fontface.css"
     ],
     "js": [
       "bower_components/jquery/dist/jquery.min.js",

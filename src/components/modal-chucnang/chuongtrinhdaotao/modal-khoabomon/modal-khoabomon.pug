@@ -6,38 +6,32 @@ section.modal_chucnang__wrapper(data-modal='khoabomon')
         h1.text-center.text-white Quản lý Khoa - Bộ môn
       .col-12
         .modal_chucnang__box.border.rounded.p-4.mt-5.bg-white
-          h5.text-center Quản lý khoa
           .row.justify-content-center.align-items-center
             .col-3
               .form-group
-                label Mã khoa
+                label Mã khoa - Bộ môn
                 input.form-control
               .form-group
-                label Tên khoa
+                label Tên khoa - Bộ môn
                 input.form-control
             .col-3
               .form-group
                 label Tên viết tắt
                 input.form-control
               .form-group
-                label Đơn vị
+                label Loại đơn vị
                 select.form-control
                   option Khoa
                   option Phòng
+                  option Bộ môn
+                  option Bộ phận
             .col-auto
               .modal_chucnang__group__button
                 button.modal_chucnang__button.btn.btn-outline-primary.px-4.mx-2
                   img.modal_chucnang__button__icon.mb-2(src='img/icons/add.png' alt='image icon')
                   div Thêm mới
-                button.modal_chucnang__button.btn.btn-outline-success.px-4.mx-2
-                  img.modal_chucnang__button__icon.mb-2(src='img/icons/upgrade.png' alt='image icon')
-                  div Cập nhật
-                button(type='reset').modal_chucnang__button.btn.btn-outline-danger.px-4.mx-2
-                  img.modal_chucnang__button__icon.mb-2(src='img/icons/error.png' alt='image icon')
-                  div Huỷ
       .col-12
         .modal_chucnang__box.border.rounded.p-4.mt-5.bg-white
-          h5.text-center Quản lý Bộ môn
           .d-flex.align-items-center.mb-2
             label.mb-0.d-flex.align-items-center
               span.text-nowrap Hiển thị &nbsp;
@@ -52,27 +46,12 @@ section.modal_chucnang__wrapper(data-modal='khoabomon')
           table#danhsach_khoabomon.modal_chucnang__table.table.table-hover
             thead.bg__caothang.text-white
               th #
-              th(scope='col' style='max-width: 100px') Mã BM
-              th(scope='col') Tên bộ môn
+              th(scope='col' style='max-width: 100px') Mã K-BM
+              th(scope='col') Tên Khoa - Bộ môn
               th(scope='col') Tên viết tắt
               th(scope='col') Loại đơn vị
               th.text-center(scope='col')
-                span.modal_chucnang__button__plus.mdi.mdi-plus.mdi-24px
                 span.modal_chucnang__button__save.ml-2.mdi.mdi-content-save-outline.mdi-24px
-            tfoot.d-none
-              tr
-                td(style='max-width: 50px')
-                td(style='max-width: 100px')
-                  input.form-control
-                td
-                  input.form-control
-                td
-                  input.form-control
-                td
-                  input.form-control
-                td.text-center
-                  span.modal_chucnang__button__edit.mdi.mdi-file-document-edit-outline.mdi-24px
-                  span.modal_chucnang__button__delete.ml-2.mdi.mdi-delete-outline.mdi-24px
             tbody
               tr
                 td(style='max-width: 50px') 1

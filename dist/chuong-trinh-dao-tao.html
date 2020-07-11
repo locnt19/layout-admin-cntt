@@ -4,7 +4,11 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<link rel="stylesheet" href="./css/global.min.css">
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/swiper.min.css">
+		<link rel="stylesheet" href="./css/select2.min.css">
+		<link rel="stylesheet" href="./css/materialdesignicons.min.css">
+		<link rel="stylesheet" href="./css/fontface.css">
 		<link rel="stylesheet" href="./css/main.min.css">
 		<title>Chương trình đào tạo</title>
 	</head>
@@ -21,13 +25,13 @@
 					<div>Chương trình đào tạo</div></a>
 				<div class="header_navbar__divider"></div><a class="header_navbar__item text-white text-decoration-none d-block" href="diem.html"><img class="header_navbar__icon mb-1" src="img/icons/test.png" alt="icon chức năng">
 					<div>Điểm</div></a>
-				<div class="header_navbar__divider"></div><a class="header_navbar__item text-white text-decoration-none d-block" href="chuong-trinh-dao-tao.html"><img class="header_navbar__icon mb-1" src="img/icons/checklist.png" alt="icon chức năng">
+				<div class="header_navbar__divider"></div><a class="header_navbar__item text-white text-decoration-none d-block" href="baocao-quyetdinh.html"><img class="header_navbar__icon mb-1" src="img/icons/checklist.png" alt="icon chức năng">
 					<div>Báo cáo quyết định</div></a>
-				<div class="header_navbar__divider"></div><a class="header_navbar__item text-white text-decoration-none d-block" href="chuong-trinh-dao-tao.html"><img class="header_navbar__icon mb-1" src="img/icons/blackboard.png" alt="icon chức năng">
+				<div class="header_navbar__divider"></div><a class="header_navbar__item text-white text-decoration-none d-block" href="e-learning.html"><img class="header_navbar__icon mb-1" src="img/icons/blackboard.png" alt="icon chức năng">
 					<div>E-learning</div></a>
-				<div class="header_navbar__divider"></div><a class="header_navbar__item text-white text-decoration-none d-block" href="chuong-trinh-dao-tao.html"><img class="header_navbar__icon mb-1" src="img/icons/function.png" alt="icon chức năng">
+				<div class="header_navbar__divider"></div><a class="header_navbar__item text-white text-decoration-none d-block" href="cntt.html"><img class="header_navbar__icon mb-1" src="img/icons/function.png" alt="icon chức năng">
 					<div>Website CNTT</div></a>
-				<div class="header_navbar__divider"></div><a class="header_navbar__item text-white text-decoration-none d-block" href="chuong-trinh-dao-tao.html"><img class="header_navbar__icon mb-1" src="img/icons/facebook.png" alt="icon chức năng">
+				<div class="header_navbar__divider"></div><a class="header_navbar__item text-white text-decoration-none d-block" href="facebook.html"><img class="header_navbar__icon mb-1" src="img/icons/facebook.png" alt="icon chức năng">
 					<div>Facebook</div></a>
 			</nav>
 		</header>
@@ -35,27 +39,48 @@
 			<section class="sidebar_chucnang__wrapper mt-4">
 				<div class="container-fluid">
 					<div class="d-flex flex-wrap justify-content-center">
-						<div class="sidebar_chucnang__item" data-modal="lichdaotao"><a class="sidebar_chucnang__box card border-0 py-3 px-2 px-sm-3 text-center text-decoration-none text-uppercase text-white" href="#">
+						<div class="sidebar_chucnang__item" data-modal="lichdaotao">
+							<div class="sidebar_chucnang__box card border-0 py-3 px-2 px-sm-3 text-center text-decoration-none text-uppercase text-white">
 								<div class="sidebar_chucnang__icon mdi mdi-calendar-blank-multiple mdi-24px"></div>
-								<div class="sidebar_chucnang__text mt-2">Lịch đào tạo</div></a></div>
-						<div class="sidebar_chucnang__item" data-modal="kehoachdaotao"><a class="sidebar_chucnang__box card border-0 py-3 px-2 px-sm-3 text-center text-decoration-none text-uppercase text-white" href="#">
+								<div class="sidebar_chucnang__text mt-2">Lịch đào tạo</div>
+							</div>
+						</div>
+						<div class="sidebar_chucnang__item" data-modal="kehoachdaotao">
+							<div class="sidebar_chucnang__box card border-0 py-3 px-2 px-sm-3 text-center text-decoration-none text-uppercase text-white">
 								<div class="sidebar_chucnang__icon mdi mdi-calendar-blank-multiple mdi-24px"></div>
-								<div class="sidebar_chucnang__text mt-2">Kế hoạch đào tạo</div></a></div>
-						<div class="sidebar_chucnang__item" data-modal="chitieudaotao"><a class="sidebar_chucnang__box card border-0 py-3 px-2 px-sm-3 text-center text-decoration-none text-uppercase text-white" href="#">
+								<div class="sidebar_chucnang__text mt-2">Kế hoạch đào tạo</div>
+							</div>
+						</div>
+						<div class="sidebar_chucnang__item" data-modal="chitieudaotao">
+							<div class="sidebar_chucnang__box card border-0 py-3 px-2 px-sm-3 text-center text-decoration-none text-uppercase text-white">
 								<div class="sidebar_chucnang__icon mdi mdi-calendar-check mdi-24px"></div>
-								<div class="sidebar_chucnang__text mt-2">Chỉ tiêu đào tạo</div></a></div>
-						<div class="sidebar_chucnang__item" data-modal="nganhnghe"><a class="sidebar_chucnang__box card border-0 py-3 px-2 px-sm-3 text-center text-decoration-none text-uppercase text-white" href="#">
+								<div class="sidebar_chucnang__text mt-2">Chỉ tiêu đào tạo</div>
+							</div>
+						</div>
+						<div class="sidebar_chucnang__item" data-modal="nganhnghe">
+							<div class="sidebar_chucnang__box card border-0 py-3 px-2 px-sm-3 text-center text-decoration-none text-uppercase text-white">
 								<div class="sidebar_chucnang__icon mdi mdi-near-me mdi-24px"></div>
-								<div class="sidebar_chucnang__text mt-2">Ngành nghề</div></a></div>
-						<div class="sidebar_chucnang__item" data-modal="chucvu"><a class="sidebar_chucnang__box card border-0 py-3 px-2 px-sm-3 text-center text-decoration-none text-uppercase text-white" href="#">
+								<div class="sidebar_chucnang__text mt-2">Ngành nghề</div>
+							</div>
+						</div>
+						<div class="sidebar_chucnang__item" data-modal="chucvu">
+							<div class="sidebar_chucnang__box card border-0 py-3 px-2 px-sm-3 text-center text-decoration-none text-uppercase text-white">
 								<div class="sidebar_chucnang__icon mdi mdi-near-me mdi-24px"></div>
-								<div class="sidebar_chucnang__text mt-2">Chức vụ</div></a></div>
-						<div class="sidebar_chucnang__item" data-modal="khoabomon"><a class="sidebar_chucnang__box card border-0 py-3 px-2 px-sm-3 text-center text-decoration-none text-uppercase text-white" href="#">
+								<div class="sidebar_chucnang__text mt-2">Chức vụ</div>
+							</div>
+						</div>
+						<div class="sidebar_chucnang__item" data-modal="khoabomon">
+							<div class="sidebar_chucnang__box card border-0 py-3 px-2 px-sm-3 text-center text-decoration-none text-uppercase text-white">
 								<div class="sidebar_chucnang__icon mdi mdi-folder-account mdi-24px"></div>
-								<div class="sidebar_chucnang__text mt-2">Khoa - Bộ môn</div></a></div>
-						<div class="sidebar_chucnang__item" data-modal="monhoc"><a class="sidebar_chucnang__box card border-0 py-3 px-2 px-sm-3 text-center text-decoration-none text-uppercase text-white" href="#">
+								<div class="sidebar_chucnang__text mt-2">Khoa - Bộ môn</div>
+							</div>
+						</div>
+						<div class="sidebar_chucnang__item" data-modal="monhoc">
+							<div class="sidebar_chucnang__box card border-0 py-3 px-2 px-sm-3 text-center text-decoration-none text-uppercase text-white">
 								<div class="sidebar_chucnang__icon mdi mdi-school mdi-24px"></div>
-								<div class="sidebar_chucnang__text mt-2">Môn học</div></a></div>
+								<div class="sidebar_chucnang__text mt-2">Môn học</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -660,15 +685,14 @@
 						</div>
 						<div class="col-12">
 							<div class="modal_chucnang__box border rounded p-4 mt-5 bg-white">
-								<h5 class="text-center">Quản lý khoa</h5>
 								<div class="row justify-content-center align-items-center">
 									<div class="col-3">
 										<div class="form-group">
-											<label>Mã khoa</label>
+											<label>Mã khoa - Bộ môn</label>
 											<input class="form-control">
 										</div>
 										<div class="form-group">
-											<label>Tên khoa</label>
+											<label>Tên khoa - Bộ môn</label>
 											<input class="form-control">
 										</div>
 									</div>
@@ -678,10 +702,12 @@
 											<input class="form-control">
 										</div>
 										<div class="form-group">
-											<label>Đơn vị</label>
+											<label>Loại đơn vị</label>
 											<select class="form-control">
 												<option>Khoa</option>
 												<option>Phòng</option>
+												<option>Bộ môn</option>
+												<option>Bộ phận</option>
 											</select>
 										</div>
 									</div>
@@ -690,12 +716,6 @@
 											<button class="modal_chucnang__button btn btn-outline-primary px-4 mx-2"><img class="modal_chucnang__button__icon mb-2" src="img/icons/add.png" alt="image icon">
 												<div>Thêm mới</div>
 											</button>
-											<button class="modal_chucnang__button btn btn-outline-success px-4 mx-2"><img class="modal_chucnang__button__icon mb-2" src="img/icons/upgrade.png" alt="image icon">
-												<div>Cập nhật</div>
-											</button>
-											<button class="modal_chucnang__button btn btn-outline-danger px-4 mx-2" type="reset"><img class="modal_chucnang__button__icon mb-2" src="img/icons/error.png" alt="image icon">
-												<div>Huỷ</div>
-											</button>
 										</div>
 									</div>
 								</div>
@@ -703,7 +723,6 @@
 						</div>
 						<div class="col-12">
 							<div class="modal_chucnang__box border rounded p-4 mt-5 bg-white">
-								<h5 class="text-center">Quản lý Bộ môn</h5>
 								<div class="d-flex align-items-center mb-2">
 									<label class="mb-0 d-flex align-items-center"><span class="text-nowrap">Hiển thị &nbsp;</span>
 										<select class="custom-select custom-select-sm form-control">
@@ -719,30 +738,12 @@
 								<table class="modal_chucnang__table table table-hover" id="danhsach_khoabomon">
 									<thead class="bg__caothang text-white">
 										<th>#</th>
-										<th scope="col" style="max-width: 100px">Mã BM</th>
-										<th scope="col">Tên bộ môn</th>
+										<th scope="col" style="max-width: 100px">Mã K-BM</th>
+										<th scope="col">Tên Khoa - Bộ môn</th>
 										<th scope="col">Tên viết tắt</th>
 										<th scope="col">Loại đơn vị</th>
-										<th class="text-center" scope="col"><span class="modal_chucnang__button__plus mdi mdi-plus mdi-24px"></span><span class="modal_chucnang__button__save ml-2 mdi mdi-content-save-outline mdi-24px"></span></th>
+										<th class="text-center" scope="col"><span class="modal_chucnang__button__save ml-2 mdi mdi-content-save-outline mdi-24px"></span></th>
 									</thead>
-									<tfoot class="d-none">
-										<tr>
-											<td style="max-width: 50px"></td>
-											<td style="max-width: 100px">
-												<input class="form-control">
-											</td>
-											<td>
-												<input class="form-control">
-											</td>
-											<td>
-												<input class="form-control">
-											</td>
-											<td>
-												<input class="form-control">
-											</td>
-											<td class="text-center"><span class="modal_chucnang__button__edit mdi mdi-file-document-edit-outline mdi-24px"></span><span class="modal_chucnang__button__delete ml-2 mdi mdi-delete-outline mdi-24px"></span></td>
-										</tr>
-									</tfoot>
 									<tbody>
 										<tr>
 											<td style="max-width: 50px">1</td>
@@ -801,13 +802,6 @@
 										</div>
 									</div>
 									<div class="col-3">
-										<div class="form-group">
-											<label>Mã giáo viên</label>
-											<div class="d-flex align-items-center">
-												<input class="form-control" readonly value="0001">
-												<div class="mdi mdi-reload mdi-24px ml-2"></div>
-											</div>
-										</div>
 										<div class="form-group">
 											<label>Loại môn học</label>
 											<select class="form-control">
@@ -1138,7 +1132,11 @@
 			</section>
 		</main>
 		<section class="small copyright bg__caothang text-white py-2 text-center fixed-bottom">&copy; 2020 Khoa CNTT - Trường Cao Đẳng Kỹ Thuật Cao Thắng</section>
-		<script src="./js/global.min.js"></script>
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/bootstrap.bundle.min.js"></script>
+		<script src="./js/swiper.min.js"></script>
+		<script src="./js/select2.full.min.js"></script>
+		<script src="./js/lazyload.min.js"></script>
 		<script src="./js/main.min.js"></script>
 	</body>
 </html>

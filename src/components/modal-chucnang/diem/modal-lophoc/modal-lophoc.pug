@@ -1,0 +1,92 @@
+section.modal_chucnang__wrapper(data-modal='lophoc')
+  .modal_chucnang__close.mdi.mdi-chevron-left.text-white
+  .container-fluid.mt-3
+    .row
+      .col-12
+        h1.text-center.text-white Lớp học
+      .col-12
+        .modal_chucnang__box.border.rounded.p-4.mt-5.bg-white
+          .row.justify-content-center.align-items-center
+            .col-3
+              .form-group
+                label Bậc
+                select.form-control
+                  option Cao đẳng
+              .form-group
+                label Ngành nghề
+                select.form-control.modal_chucnang__select2
+                  option Công nghệ thông tin
+                  option Cơ khí
+                  option Ô tô
+            .col-3
+              .form-group
+                label Loại hình đào tạo
+                select.form-control
+                  option Chính quy
+                  option Liên thông
+              .row.no-gutters
+                .col.form-group
+                  label Khoá học
+                  input.form-control(type='number' min='15' value='15')
+                .col.ml-2.form-group
+                  label Số lớp cần tạo
+                  input.form-control(type='number' min='1' value='1')
+            .col-3
+              .form-group
+                label Tên lớp
+                input(value='Tự generate khi thay đổi Bậc, Ngành Nghề, Loại Hình đào tạo').form-control
+              .form-group
+                label Tên viết tắt
+                input(value='Tự generate khi thay đổi Bậc, Ngành Nghề, Loại Hình đào tạo').form-control
+            .col-auto
+              .modal_chucnang__group__button
+                button.modal_chucnang__button.btn.btn-outline-primary.px-4.mx-2
+                  img.modal_chucnang__button__icon.mb-1(src='img/icons/add.png' alt='image icon')
+                  div Thêm
+      .col-12
+        .modal_chucnang__box.border.rounded.p-4.mt-5.bg-white
+          .d-flex.align-items-center.mb-2
+            label.mb-0.d-flex.align-items-center
+              span.text-nowrap Hiển thị &nbsp;
+              select.custom-select.custom-select-sm.form-control
+                option 10
+                option 25
+                option 50
+              span.text-nowrap &nbsp; hàng
+            label.ml-auto.mb-0.d-flex.align-items-center
+              span.text-nowrap Bộ lọc: &nbsp;
+              input(placeholder='Nhập từ khoá...').form-control.form-control-sm
+          table#danhsach_lophoc.modal_chucnang__table.table.table-hover
+            thead.bg__caothang.text-white
+              th(scope='col').text-center #
+              th(scope='col') Mã lớp
+              th(scope='col') Tên viết tắt
+              th(scope='col') Tên lớp
+              th(scope='col') Bậc
+              th(scope='col') Ngành nghề
+              th(scope='col') Loại
+              th(scope='col') Khoá học
+              th.text-center(scope='col')
+                span.modal_chucnang__button__save.mdi.mdi-content-save-outline.mdi-24px
+            tbody
+              tr
+                td.text-center 100
+                td(style='width: 130px') CĐTH16A
+                td(style='width: 130px')
+                  input(disabled value='CĐ TH 16A').form-control
+                td
+                  input(disabled value='Cao đẳng Tin học 16A').form-control
+                td
+                  select(disabled).form-control
+                    option Cao đẳng
+                td
+                  select(disabled).form-control.modal_chucnang__select2
+                    option Công nghệ thông tin
+                td
+                  select(disabled).form-control
+                    option Chính quy
+                td(style='width: 90px')
+                  input.form-control(disabled type='number' min='15' value='15')
+                td.text-center
+                  span.modal_chucnang__button__edit.mdi.mdi-file-document-edit-outline.mdi-24px
+                  span.modal_chucnang__button__delete.ml-2.mdi.mdi-delete-outline.mdi-24px

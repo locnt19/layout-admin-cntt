@@ -62,8 +62,8 @@ gulp.task('import:plugin-js', function (done) {
     return gulp.src(library.js, {
       allowEmpty: true
     })
-      .pipe(concat('global.min.js'))
-      .pipe(uglify())
+      // .pipe(concat('global.min.js'))
+      // .pipe(uglify())
       .pipe(gulp.dest(path.js.dist))
       .pipe(browserSync.reload({
         stream: true
@@ -78,7 +78,7 @@ gulp.task('import:plugin-css', function (done) {
     return gulp.src(library.css, {
       allowEmpty: true,
     })
-      .pipe(concat('global.min.css'))
+      // .pipe(concat('global.min.css'))
       .pipe(gulp.dest(path.css.dist))
       .pipe(browserSync.reload({
         stream: true
